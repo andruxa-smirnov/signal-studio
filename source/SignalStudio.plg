@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SignalStudio - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/SignalStudio.res" /d "NDEBUG" /d "_AFXDLL" "C:\Chris\MyProjects\SignalStudio\SignalStudio\SignalStudio.rc"" 
+Creating temporary file "C:\Users\Akshay\AppData\Local\Temp\RSP78C.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/SignalStudio.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\AboutDlg.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\Benchmark.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\ChildFrm.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\MainFrm.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\Persist.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\CodeRuler.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\VersionInfo.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\Wave.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\SignalStudio.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\SignalStudioDoc.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\SignalStudioView.cpp"
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\Win32Console.cpp"
+]
+Creating command line "cl.exe @C:\Users\Akshay\AppData\Local\Temp\RSP78C.tmp" 
+Creating temporary file "C:\Users\Akshay\AppData\Local\Temp\RSP78D.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/SignalStudio.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Chris\MyProjects\SignalStudio\SignalStudio\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Akshay\AppData\Local\Temp\RSP78D.tmp" 
+Creating temporary file "C:\Users\Akshay\AppData\Local\Temp\RSP78E.tmp" with contents
+[
+version.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SignalStudio.pdb" /debug /machine:I386 /out:"Release/SignalStudio.exe" /largeaddressaware 
+.\Release\AboutDlg.obj
+.\Release\Benchmark.obj
+.\Release\ChildFrm.obj
+.\Release\MainFrm.obj
+.\Release\Persist.obj
+.\Release\CodeRuler.obj
+.\Release\StdAfx.obj
+.\Release\VersionInfo.obj
+.\Release\Wave.obj
+.\Release\SignalStudio.obj
+.\Release\SignalStudioDoc.obj
+.\Release\SignalStudioView.obj
+.\Release\Win32Console.obj
+.\Release\SignalStudio.res
+]
+Creating command line "link.exe @C:\Users\Akshay\AppData\Local\Temp\RSP78E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AboutDlg.cpp
+Benchmark.cpp
+ChildFrm.cpp
+MainFrm.cpp
+Persist.cpp
+CodeRuler.cpp
+VersionInfo.cpp
+Wave.cpp
+SignalStudio.cpp
+SignalStudioDoc.cpp
+SignalStudioView.cpp
+Win32Console.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\Akshay\AppData\Local\Temp\RSP790.tmp" with contents
+[
+/nologo /o"Release/SignalStudio.bsc" 
+.\Release\StdAfx.sbr
+.\Release\AboutDlg.sbr
+.\Release\Benchmark.sbr
+.\Release\ChildFrm.sbr
+.\Release\MainFrm.sbr
+.\Release\Persist.sbr
+.\Release\CodeRuler.sbr
+.\Release\VersionInfo.sbr
+.\Release\Wave.sbr
+.\Release\SignalStudio.sbr
+.\Release\SignalStudioDoc.sbr
+.\Release\SignalStudioView.sbr
+.\Release\Win32Console.sbr]
+Creating command line "bscmake.exe @C:\Users\Akshay\AppData\Local\Temp\RSP790.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SignalStudio.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
