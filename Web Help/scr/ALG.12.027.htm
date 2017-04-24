@@ -1,0 +1,245 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Spectrum tab</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(96);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.12.027.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"><FONT face=Verdana><STRONG>Spectrum Tab</STRONG> </FONT>   </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<p class="body" align=center><FONT face=Verdana><IMG alt="" src="spectrumtab.png"> </FONT>  
+          
+          
+      </p>
+<p class="body" align=center><FONT face=Verdana><STRONG>Due 
+to constant development in design and features, the appearance of certain 
+elements may differ in the program.</STRONG> </FONT>  
+          
+          
+      </p>
+<H3><A 
+name=windowfn></A><FONT face=Verdana>Window function</FONT> </H3>
+<P><FONT face="Verdana" >This option selects which window function the </FONT><A 
+href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face="Verdana" > applies to audio, 
+prior to the FFT, to reduce spectral leakage. All functions are bell-shaped or 
+triangular, except for the rectangular window. </FONT>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 align=center border=1>
+  
+  <TR>
+    <TD><FONT face="Verdana" >Bartlett</FONT></TD>
+    <TD><FONT face="Verdana" >triangular</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Blackman</FONT></TD>
+    <TD><FONT face="Verdana" >higher-order generalized cosine</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Blackman Harris</FONT></TD>
+    <TD><FONT face="Verdana" >higher-order generalized cosine</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Hamming</FONT></TD>
+    <TD><FONT face="Verdana" >minimizes the nearest side lobe</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Hann (AKA Hanning)</FONT></TD>
+    <TD><FONT face="Verdana" >classic raised cosine</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Rectangular</FONT></TD>
+    <TD><FONT face="Verdana" >brick wall</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Welch</FONT></TD>
+    <TD><FONT face="Verdana" >parabolic section</FONT></TD></TR></TABLE><!--  content stops HERE  --></P>
+<H3><A 
+name=windowsize></A><FONT face=Verdana>Window size</FONT> </H3>
+<P><FONT face="Verdana" >This option selects the window size (in sample frames) 
+of the </FONT><A href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face="Verdana" >'s FFT. The window size determines the number of output 
+frequency bands (AKA bins), and lets you control the inevitable trade-off 
+between responsiveness (smaller windows) and spectral resolution (bigger 
+windows). Bigger window sizes show more spectral detail, particularly for low 
+frequencies, but at the cost of increased latency. See also </FONT><A 
+href="ALG.12.027.htm#averaging" ><FONT size=2 face="Verdana" >averaging</FONT></A><FONT face="Verdana" >. </FONT>
+<P><FONT face="Verdana" >The number of output frequency bands equals the window 
+size divided by two, so a window size of 1024 yields 512 output bands. The bands 
+are equally spaced in terms of frequency, meaning they all have the same width, 
+equal to the audio's sample rate divided by the window size. For a window size 
+of 1024, and assuming CD audio, the bandwidth is 44,100 / 1024 = 43 Hz. The 
+resulting latency is the reciprocal of the bandwidth, or 1 / 43 = 23 
+milliseconds in this case. 23 ms is responsive enough, but 43 Hz is poor 
+resolution for bass frequencies. A window size of 4096 gives a bandwidth of 
+44,100 / 4096 = 10.8 Hz, considerably improving the resolution, but worsening 
+the latency to 1 / 10.8 = 93 ms. Pick your poison. </FONT>
+<P><FONT face="Verdana" >Note that large window sizes (8192 or higher) may 
+overload the CPU if a filled </FONT><A 
+href="../../Options/Spectrum/04%20Plot%20style.htm#plotstyle" ><FONT size=2 face="Verdana" >plot style</FONT></A><FONT face="Verdana" > is selected, 
+potentially making&nbsp;Signal Studio&nbsp;sluggish or unresponsive. If this 
+occurs, reduce the window size or change the plot style to "Line".</FONT></P>
+<H3><A 
+name=averaging></A><FONT face=Verdana>Averaging</FONT></H3>
+<P><FONT face="Verdana" >This option determines how many windows of audio are 
+analyzed for each plot update in the </FONT><A 
+href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face="Verdana" >. If averaging is 
+zero, only one window is analyzed per update and averaging is effectively 
+disabled; this maximizes responsiveness, but at the cost of jerkiness. If 
+averaging is one, two windows (overlapped by 50%) are analyzed per update, 
+resulting in a slightly smoother plot, for a small cost in terms of increased 
+latency. Bigger averaging values make the plot smoother, but less temporally 
+accurate. </FONT>
+<P><FONT face="Verdana" >Averaging interacts with </FONT><A 
+href="ALG.12.027.htm#windowsize"><FONT size=2 face="Verdana" >window size</FONT></A><FONT face="Verdana" > to determine 
+responsiveness. Even with averaging disabled, smaller window sizes still give 
+better responsiveness (and worse spectral resolution) than larger ones. Note 
+that a large averaging value combined with a large window size can cause 
+excessive CPU overhead, particularly if a filled </FONT><A 
+href="ALG.12.027.htm#plotstyle"><FONT face=Verdana><FONT size=2 >plot 
+style</FONT> </FONT> </A><FONT face="Verdana" > is 
+selected.</FONT></P>
+<H3><A 
+name=plotstyle></A><A name=plotstyle></A><FONT face=Verdana>Plot style</FONT> </H3>
+<P><FONT face="Verdana" >This option selects the style of plot shown in the 
+</FONT><A href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face="Verdana" >. Note that 
+filled styles require much more CPU power than Line style, particularly for 
+large </FONT><A href="ALG.12.027.htm#windowsize"><FONT size=2 face="Verdana" >window sizes</FONT></A><FONT face="Verdana" >. </FONT>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 align=center border=1>
+  
+  <TR>
+    <TD><FONT face="Verdana" >Line</FONT></TD>
+    <TD><FONT face="Verdana" >Series points are drawn as a 
+  polyline.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Area</FONT></TD>
+    <TD><FONT face="Verdana" >Series points are filled as a 
+  polygon.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Outlined Area</FONT></TD>
+    <TD><FONT face="Verdana" >Series points are filled as a polygon, and also 
+      drawn as a polyline.</FONT></TD></TR></TABLE></P>
+<H3><FONT face="Verdana" >Frequency axis</FONT></H3>
+<P><FONT face="Verdana" >This option selects the type of frequency axis (linear 
+or logarithmic) shown in the </FONT><A 
+href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face=Verdana>. A logarithmic 
+scale allocates more space (visually) to low frequencies. </FONT> </P>
+<H3><FONT face="Verdana" >Channel mode</FONT></H3>
+<P><FONT face="Verdana" >This option determines how the </FONT><A 
+href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face="Verdana" > handles 
+multi-channel audio. Select "Combine" to sum all channels prior to analysis, or 
+"Separate" to analyze each channel individually.</FONT></P>
+<H3><FONT face="Verdana" >Plot colors</FONT></H3>
+<P><FONT face="Verdana" >This option lets you customize the </FONT><A 
+href="ALG.12.028.htm#colors"><FONT size=2 face="Verdana" >colors</FONT></A><FONT face="Verdana" > of the plot background 
+and grid in the </FONT><A href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face="Verdana" >. To edit a color, press its corresponding button.</FONT></P>
+<H3><A 
+name=showpeaks></A><FONT face=Verdana>Show peaks</FONT> </H3>
+<P><FONT face="Verdana" >This option determines whether the 
+</FONT>     <A 
+href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face="Verdana" > shows peaks, and in what style, as follows: </FONT>         
+<P>
+<TABLE cellSpacing=0 cellPadding=2 align=center border=1>
+  
+  <TR>
+    <TD><FONT face="Verdana" >Off</FONT></TD>
+    <TD><FONT face=Verdana>Don't show 
+  peaks. </FONT>  </TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Lines</FONT></TD>
+    <TD><FONT face=Verdana>Show peaks as 
+    lines. </FONT>   </TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Dots</FONT></TD>
+    <TD><FONT face=Verdana>Show peaks as 
+    dots. 
+</FONT>   </TD></TR></TABLE>
+<P><FONT face="Verdana" >The "Lines" style is more 
+compatible with the "Area" and "Outlined Area" </FONT>            <A 
+href="ALG.12.027.htm#plotstyle"><FONT size=2 face="Verdana" >plot styles</FONT></A><FONT face="Verdana" >. If the plot style is "Line", it's recommended to show peaks as 
+dots to avoid confusion. Peak persistence is configurable via the </FONT>          
+             
+<A href="ALG.12.027.htm"><FONT face=Verdana><FONT size=2 >peak 
+hold</FONT> </FONT> </A><FONT face="Verdana" > and </FONT>  <A 
+href="ALG.12.027.htm#peakdecay"><FONT size=2 face="Verdana" >peak decay</FONT></A><FONT face=Verdana> settings. </FONT> </P>
+<H3><A 
+name=peakhold></A><FONT face=Verdana>Peak hold</FONT> </H3>
+<P><FONT face="Verdana" >This option determines the </FONT><A 
+href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face="Verdana" >'s peak hold time, 
+in milliseconds. It's only relevant when peaks are being shown, i.e. when 
+</FONT><A href="ALG.12.027.htm#showpeaks"><FONT size=2 face="Verdana" >Show Peaks</FONT></A><FONT face="Verdana" > 
+isn't "Off". The bigger the hold time, the longer peaks are held. If the hold 
+time is zero, peaks aren't held, and begin </FONT><A 
+href="ALG.12.027.htm#peakdecay"><FONT size=2 face="Verdana" >decaying</FONT></A><FONT face="Verdana" > immediately. If the 
+hold time is large (e.g. 10,000), peaks rarely or never decay, until the plot is 
+reset. To reset the plot, use the Reset command in the Spectrum bar's context 
+menu, or switch to a different document.</FONT></P>
+<H3><A name=peakdecay></A><FONT face=Verdana>Peak decay</FONT> </H3>
+<P><FONT face=Verdana>This option determines the </FONT>    <A 
+href="ALG.08.043.htm"><FONT size=2 face=Verdana>spectrum 
+bar</FONT></A><FONT face=Verdana>'s peak decay rate, in decibels per second. It's only relevant when 
+peaks are being shown, i.e. when </FONT>         
+         <A 
+href="ALG.12.027.htm#showpeaks"><FONT size=2 face=Verdana>Show 
+Peaks</FONT></A><FONT face=Verdana> isn't 
+"Off". A peak begins decaying when the </FONT>         <A 
+href="ALG.12.027.htm#peakhold"><FONT size=2 face=Verdana>peak 
+hold</FONT></A><FONT face=Verdana> time 
+expires, and the bigger the decay rate, the more rapidly it decays. If the decay 
+rate is zero, peaks don't decay, in which case they accumulate and persist until 
+the plot is reset. To reset the plot, use the Reset command in the Spectrum 
+bar's context menu, or switch to a different document.</FONT>          
+               
+               
+              
+</P>
+<P><FONT face=Verdana></FONT>&nbsp;</P></FONT>
+<H3><FONT face=Verdana></FONT></H3>
+<H3><FONT face=Verdana></FONT></H3>
+<H3><FONT face=Verdana></FONT></H3></FONT>
+<H3><FONT face=Verdana></FONT></H3>
+<H3><FONT face=Verdana></FONT></H3></FONT>
+<H3><FONT face=Verdana></FONT></H3>
+<H3><FONT face=Verdana></FONT></H3>
+<H3><FONT face=Verdana></FONT></H3></FONT>
+<H3><FONT face=Verdana></FONT></H3>
+<H3><FONT face=Verdana></FONT></H3></body></HTML>

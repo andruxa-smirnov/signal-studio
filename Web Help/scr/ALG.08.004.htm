@@ -1,0 +1,129 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Record</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(42);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.08.004.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG>Record 
+      Option</STRONG> 
+      </FONT>   </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<P><FONT face="Verdana" >This command records audio to a file. To start a 
+recording, use "<SPAN class=cmd><EM>Transport -&gt; Record</EM>"</SPAN>, or 
+press "<SPAN class=key><EM>Ctrl+R</EM>" (Keyboard Shortcut)</SPAN>. 
+Alternatively you can use the </FONT><A 
+href="ALG.08.029.htm"><FONT size=2 face="Verdana" >Toolbar</FONT></A><FONT face="Verdana" >'s record button. </FONT>
+<P>  <FONT face=Verdana>First the "<EM>Save Recording As</EM>" file dialog is 
+displayed, prompting you to choose a file name and folder for the recording. 
+<STRONG>Don't enter a file extension, as only .wav is supported. </STRONG>Press 
+"<EM>OK</EM>" to continue.<STRONG> </STRONG></FONT>
+<P><FONT face="Verdana" >Next the Record dialog is displayed, prompting you to 
+specify other recording parameters, including the number of channels, sample 
+rate (in Hertz), and sample size (in bits). The most common sample rates are 
+included in the drop-down menu for convenience, but you can type any other 
+non-zero value provided your audio hardware supports it. If you get a 
+DirectSound "invalid parameter" error after changing one of these parameters, 
+most likely your audio hardware doesn't support recording in the selected audio 
+format. </FONT>
+<P><FONT face="Verdana" >Press "<EM>Start</EM>" to begin recording. Press 
+"<EM>Stop</EM>" to stop recording and open the resulting file in Signal Studio. 
+Press "<EM>Pause</EM>" at any time to pause the recording, and "<EM>Resume</EM>" 
+to resume it. To prevent accidental data loss, both "<EM>Stop</EM>" and 
+"<EM>Pause</EM>" display a confirmation dialog. </FONT>
+<P><FONT face="Verdana" >Audio is captured from the currently selected </FONT><A 
+href="ALG.12.015.htm#record device" ><FONT size=2 face="Verdana" >record 
+device</FONT></A><FONT face="Verdana" >. The meters on 
+the right side of the dialog are continuously updated, and show the current and 
+peak audio levels being received from the record device. Note that the Record 
+dialog is resizable. If you're recording surround audio, you may want to enlarge 
+the Record dialog, so you can see all of the meters at once. </FONT>
+<P><FONT face="Verdana" >If the audio source is active, but the record level 
+meters don't show anything, check your connections. If there's a mixer dialog 
+associated with your audio hardware, verify that the correct input is selected, 
+and that its level is set appropriately. You may also want to check the OS audio 
+settings, typically found in "Settings -&gt; Sounds -&gt; Audio". </FONT>
+<P><FONT face="Verdana" >It's possible 
+to record while playing along to an existing file, though some latency may 
+occur. If you want the existing file to automatically start playing when you 
+start recording, check the "<EM>Sync playback</EM>         
+              
+          " 
+option in the Record dialog. If you want the recorded audio to be automatically 
+</FONT><A href="ALG.01.009.htm"><FONT size=2 face="Verdana" >opened</FONT></A><FONT face="Verdana" > after recording stops, check the "<EM>Open recording</EM>    
+   " option. </FONT>
+<P>  <FONT face=Verdana>Because&nbsp;Signal Studio&nbsp;records directly to disk, 
+the recording duration is only limited by available disk space. <STRONG>The 
+recording size can exceed 4GB, and if it does, the output file is automatically 
+converted from WAV format to RF64 format, in order to avoid WAV format's 4GB 
+limit.</STRONG> <STRONG>The file 
+extension remains .wav in this case, but&nbsp;Signal Studio 
+opens the file correctly regardless of the extension. Note 
+however that it's possible to create a recording that&nbsp;Signal Studio 
+can't open because it won't fit in </STRONG></FONT>       
+            
+              
+               
+            
+            
+          <A 
+href="ALG.11.001.htm#performance"><FONT size=2 face="Verdana" >memory</FONT></A><FONT face="Verdana" ><STRONG> . This is likely to occur with&nbsp;any 32-bit 
+program. </STRONG>      
+       </FONT>
+<P><FONT face="Verdana" >It's 
+recommended to record to a very fast disk, and to avoid using other applications 
+while recording. For laptops, recording to an external drive may be 
+preferable.<STRONG> If</STRONG> <STRONG>the disk can't keep up, the recording is 
+aborted</STRONG>           
+           
+              
+; see also </FONT><A 
+href="ALG.12.015.htm#recordbuffsize"><FONT size=2 face="Verdana" >record buffer size</FONT></A><FONT face="Verdana" >.</FONT></P>
+<P><FONT face=Verdana><!--  content stops HERE  --></FONT></P></FONT></FONT></FONT></FONT></FONT></FONT></FONT>
+<DIV><FONT face=Verdana></FONT></DIV></body></HTML>

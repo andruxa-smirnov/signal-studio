@@ -1,0 +1,110 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Getting More Plugins</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(80);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.08.031.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG>Getting More 
+      Plugins</STRONG> 
+      </FONT> 
+        </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<P><FONT face="Verdana" >Starting with 
+Signal Studio version 1.1, the set of 92 plugins are now pre-included within the package itself.&nbsp;To get more </FONT><A 
+href="ALG.08.034.htm"><FONT face=Verdana>plugins</FONT></A><FONT face=Verdana> 
+, you   may 
+access the internet to find some. Be careful 
+to download the appropriate one:&nbsp;Signal Studio&nbsp;<EM>only</EM> accepts 32-bit versions 
+of those plugins. In theory&nbsp;Signal Studio&nbsp;can use any LADSPA 
+plugins, not just Steve's, but Windows LADSPA plugins are rare, and 64-bit 
+versions even more so. </FONT>
+<P><FONT face=Verdana><STRONG>Additional plugins must be copied into the 
+"<EM>Plugins"</EM>       
+ folder</STRONG>, which is normally a 
+subfolder of the folder containing Signal Studio.exe. A typical path is either 
+"C:\Program Files\Signal Studio\Plugins"&nbsp;on 32-bit systems, or "C:\Program 
+Files (x86)\Signal Studio\Plugins"&nbsp;on 64-bit systems. </FONT>            
+        
+      
+   
+<P><FONT face="Verdana" >Signal 
+Studio&nbsp;determines what plugins are 
+available <STRONG>during startup only</STRONG>. Consequently, if 
+plugins are added to the Plugins folder while&nbsp;Signal Studio is running, they won't 
+be available until&nbsp;Signal Studio is exited and restarted. </FONT>
+<P><FONT face="Verdana" >Avoid 
+deleting plugins from the "<EM>Plugins</EM>" folder while 
+Signal Studio is running, as this may cause errors. 
+<STRONG>If&nbsp;Signal Studio can't find at least one valid plugin 
+during startup,</STRONG> <STRONG>     
+             
+            
+             
+        the <SPAN class=cmd>Plugin</SPAN> menu is hidden</STRONG> 
+  . A missing <SPAN class=cmd>Plugin</SPAN> menu may also be 
+symptomatic of having downloaded the wrong distribution, i.e. attempting to use 
+64-bit plugins in 32-bit&nbsp;Signal Studio or vice versa. </FONT>
+<P><FONT face="Verdana" >Note that four of Steve's plugins depend on an 
+additional library, libfftw3f-3.dll, which is included in the plugins 
+distribution. To use any of these four plugins, libfftw3f-3.dll must also be 
+copied into the Plugins folder, otherwise they will fail to load. The four 
+FFTW-dependent plugins are: </FONT>
+<UL>
+  <LI><FONT face="Verdana" >Impulse convolver (imp_1199.dll) </FONT>
+  <LI><FONT face="Verdana" >Multiband EQ (mbeq_1197.dll) </FONT>
+  <LI><FONT face="Verdana" >Pitch Scaler (pitch_scale_1193.dll) </FONT>
+  <LI><FONT face="Verdana" >Higher Quality Pitch Scaler (pitch_scale_1194.dll) 
+  </FONT></LI></UL>
+<P><FONT face="Verdana" >Steve provides </FONT><A 
+href=" http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html"><FONT face=Verdana>documentation</FONT></A><FONT face="Verdana" >              
+   for his plugins and their parameters. </FONT></P>
+<P><!--  content stops HERE  --><FONT face=Verdana></FONT></P></FONT></FONT></FONT></FONT>
+<DIV><FONT face=Verdana></FONT></DIV></FONT></FONT></FONT></FONT>
+<DIV><FONT face=Verdana></FONT></DIV></body></HTML>

@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Export</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(21);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.03.006.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG>Export 
+      Option</STRONG> 
+      </FONT>    </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2">
+</td>
+</tr>
+</table>
+</div>
+<P><FONT face="Verdana" >This command lets you save audio in other </FONT><A 
+href="ALG.11.001.htm#file formats" ><FONT size=2 face="Verdana" >file formats</FONT></A><FONT face="Verdana" >. Unlike the <SPAN 
+class=cmd><EM>File -&gt; Save As</EM></SPAN> command, <SPAN class=cmd><EM>File 
+-&gt; Export</EM></SPAN> gives you precise control over the format details, via 
+the Export dialog. The Export dialog contains three drop lists, which let you 
+specify the major format, subtype, and endianness. The list of subtypes varies 
+depending on which major format is selected, and on the number of channels in 
+the audio. Note that some combinations of major format and channel count have 
+few or no subtypes. </FONT>
+<P><FONT face="Verdana" >You can also use <SPAN class=cmd><EM>File -&gt; Save 
+As</EM></SPAN> to save audio in other formats, by selecting the desired 
+format in the file dialog's "Save as type" drop list. In this case&nbsp;Signal Studio&nbsp;tries to 
+find an integer PCM subtype with the correct sample size, so that no precision 
+is lost. If no suitable subtype is available, the save fails with the message 
+"Format not recognized." </FONT>
+<P>   <FONT face=Verdana><STRONG>The 
+Export command is more powerful than Save As, but also more dangerous</STRONG>: 
+it lets you save audio in any supported combination of format and subtype, 
+regardless of whether precision is lost. <STRONG>Note that if you reduce the 
+sample size, or select a floating point or compressed subtype, the resulting 
+file will not be a </STRONG></FONT>          
+             
+             
+             
+      <A 
+href="ALG.11.001.htm#bit perfect" ><FONT size=2 face="Verdana" >perfect</FONT></A><FONT face="Verdana" > <STRONG> copy of the audio</STRONG> 
+. </FONT>    
+ </P>
+<P><FONT face=Verdana></FONT> </P>
+</body>

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Metadata</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(36);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.08.011.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"><STRONG><FONT face="Verdana" >Metadata</FONT></STRONG></div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2">
+</td>
+</tr>
+</table>
+</div>
+<P><FONT face="Verdana" >An audio file may include information about the audio, 
+known as <EM>metadata</EM> or tags. When a file's 
+(containing metadata)&nbsp;properties&nbsp;is viewed in the explorer, it looks   
+          like below: </FONT>
+<P align=center><FONT face="Verdana" ><IMG alt="" src="metadata1.png">   
+            </FONT></P>
+<P><FONT face="Verdana" >   &nbsp;To display or edit metadata, use "<SPAN 
+class=cmd><EM>Edit -&gt; Metadata</EM>"</SPAN> or "<SPAN 
+class=key><EM>Shift+M</EM>" (Keyboard Shortcut)</SPAN>&nbsp;to launch the 
+Metadata dialog. The dialog lists the name and value of each tag. </FONT>
+<P align=center><FONT face="Verdana" ><IMG alt="" src="metadata.png"></FONT></P>
+<P><FONT face=Verdana>To edit a tag, left-click its value. A popup edit 
+control is displayed. To end the edit, press <SPAN class=key>Enter</SPAN> or 
+left-click outside the edit control. To end the edit and continue to the next 
+tag, press <SPAN class=key>Tab</SPAN> or the Down arrow; to continue to the previous 
+tag, press " <SPAN class=key><EM>Shift+Tab</EM>" (Keyboard 
+Shorcut)</SPAN>&nbsp;or the "<EM>Up arrow</EM>". Press "<EM>OK</EM>      " 
+to close the dialog and save your changes. </FONT>
+<P><FONT face="Verdana" >Signal Studio&nbsp;supports a fixed set of metadata, 
+listed in the table below. Some </FONT><A 
+href="ALG.11.001.htm#file formats" ><FONT size=2 face="Verdana" >file formats</FONT></A><FONT face="Verdana" > don't support 
+metadata, or only support a subset of these tags. FLAC and MP3 support them all, 
+and Ogg/Vorbis, WAV and AIFF support most of them. For MP3 files, both ID3V1 and 
+ID3V2 tags are supported.</FONT></P>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 align=center border=1>
+  
+  <TR>
+    <TH><FONT face=Verdana>Name</FONT></TH>
+    <TH><FONT face=Verdana>ID3V2</FONT></TH>
+    <TH><FONT face=Verdana>WAV</FONT></TH></TR>
+  <TR>
+    <TD><FONT face=Verdana>Title</FONT></TD>
+    <TD><FONT face=Verdana>TIT2</FONT></TD>
+    <TD><FONT face=Verdana>INAM</FONT></TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Copyright</FONT></TD>
+    <TD><FONT face=Verdana>TCOP</FONT></TD>
+    <TD><FONT face=Verdana>ICOP</FONT></TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Software</FONT></TD>
+    <TD><FONT face=Verdana>TSSE</FONT></TD>
+    <TD><FONT face=Verdana>ISFT</FONT></TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Artist</FONT></TD>
+    <TD><FONT face=Verdana>TPE1</FONT></TD>
+    <TD><FONT face=Verdana>IART</FONT></TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Comment</FONT></TD>
+    <TD><FONT face=Verdana>COMM</FONT></TD>
+    <TD><FONT face=Verdana>ICMT</FONT></TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Date</FONT></TD>
+    <TD><FONT face=Verdana>TDRC</FONT></TD>
+    <TD><FONT face=Verdana>ICRD</FONT></TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Album</FONT></TD>
+    <TD><FONT face=Verdana>TALB</FONT></TD>
+    <TD><FONT face=Verdana>IPRD</FONT></TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>License</FONT></TD>
+    <TD><FONT face=Verdana>TOWN</FONT></TD>
+    <TD><FONT face=Verdana>&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Track Number</FONT> </TD>
+    <TD><FONT face=Verdana>TRCK</FONT></TD>
+    <TD><FONT face=Verdana>itrk</FONT></TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Genre</FONT></TD>
+    <TD><FONT face=Verdana>TCON</FONT></TD>
+    <TD><FONT face=Verdana>IGNR</FONT></TD></TR></TABLE><!--  content stops HERE  --></P>
+<P><FONT face=Verdana></FONT>&nbsp;</P>
+<P><FONT face=Verdana></FONT></P>
+<P><FONT face=Verdana></FONT></P>
+<DIV><FONT face=Verdana></FONT></DIV></body>

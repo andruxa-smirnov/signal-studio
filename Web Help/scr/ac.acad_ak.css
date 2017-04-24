@@ -1,0 +1,2023 @@
+/* *************************************************************************************/
+BODY  {
+	background-color : #ffffff;
+	font-family : arial, helvetica, sans-serif;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+	color : #000000;
+	letter-spacing : normal;
+	word-spacing : normal;
+	text-align : left;
+	text-indent : 0pt;
+	margin-bottom : 0pt;
+	margin-left : 12pt;
+	margin-right : 12pt;
+	margin-top : 6pt;
+}
+
+TABLE  {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+	xcolor : #000000;
+	xbackground-color : #FFFFFF;
+	letter-spacing : normal;
+	text-align : left;
+	text-indent : 0pt;
+	word-spacing : normal;
+	xbackground : #CCCCCC;
+	margin-top : 5pt;
+}
+
+UL  {
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+}
+
+OL  {
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+}
+
+DD  {
+	margin-left : 15pt;
+}
+
+HR  {
+	color : #009999;
+}
+
+/* wraps the entire heading/banner area*/
+DIV.HeadingDiv  {
+	margin-left : -16;
+	margin-right : -16;
+	margin-top : -10;
+	margin-bottom : 14;
+	background : url(ac-headbanner.gif);
+}
+
+/* inside the HeadingDiv*/
+TABLE.HeadingTable  {
+	width : 103%;
+	background-color : transparent;
+}
+
+/* formats the TOPSTYLEn text (see USERMACROS.TXT)*/
+DIV.BookTitle  {
+	padding-left : 10pt;
+	padding-top : 5pt;
+	line-height : 8pt;
+}
+
+/* formats the TOPSTYLEn cell*/
+TD.BookTitleCell  {
+	width : 50%;
+}
+
+/* formats the TOPSTYLEn text (see USERMACROS.TXT)*/
+SPAN.BookTitleLink  {
+	color : #ffffff;
+	font-weight : normal;
+	font-style : italic;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 8pt;
+	text-decoration : none;
+}
+
+/* browse button info text*/
+TD.InfoLine  {
+	font-size : 8pt;
+	visibility : hidden;
+	color : white;
+	line-height : 10pt;
+}
+
+/* formats the cells that hold the browse buttons and info text*/
+TD.NavGif  {
+	padding : 1;
+	align : center;
+}
+
+TABLE.HeadNavTable  {
+	background-color : transparent;
+}
+
+/* *** Topic Updates (CUD) Styles ****/
+.noshow_cud  {
+	background : transparent;
+	width : 100%;
+	background-color : #add8e6;
+	padding-bottom : 7pt;
+}
+
+.updatelabel  {
+	font-weight : bold;
+	margin-top : 4pt;
+	margin-left : 10pt;
+	margin-bottom : -3pt;
+}
+
+.updateitem  {
+	margin-left : 25;
+	text-indent : -12pt;
+}
+
+.updatelink  {
+	font-weight : bold;
+}
+
+.updatedesc  {
+	font-weight : normal;
+}
+
+.datatable  {
+	background : transparent;
+}
+
+/* heading text*/
+DIV.TopHead  {
+	margin-left : 10pt;
+	line-height : 18pt;
+	width : 95%;
+	color : white;
+	font-size : 14pt;
+}
+
+/* table that holds the tabs*/
+TABLE.TabTable  {
+	background : transparent;
+	text-decoration : none;
+}
+
+/* "selected" tab*/
+TD.TabOnCell  {
+	width : 80;
+	text-align : center;
+	text-decoration : none;
+	background : url(ac.TabOn2.gif);
+}
+
+/* "unselected" tab*/
+TD.TabOffCell  {
+	width : 80;
+	text-align : center;
+	text-decoration : none;
+	background : url(ac.TabOff2.gif);
+}
+
+/* "unavailable" tab*/
+TD.TabGreyCell  {
+	width : 80;
+	text-align : center;
+	text-decoration : none;
+	background : url(ac.TabGrey2.gif);
+}
+
+/* formatting of "selected" tab label*/
+DIV.TabOn  {
+	font-size : 8pt;
+	font-weight : bold;
+	text-decoration : none;
+}
+
+/* formatting of "unselected" tab label*/
+DIV.TabOff  {
+	font-size : 8pt;
+	font-weight : bold;
+	xcolor : #ffffff;
+	text-decoration : none;
+}
+
+/* formatting of "unavailable" tab label*/
+DIV.TabGrey  {
+	font-size : 8pt;
+	font-weight : bold;
+	color : #999999;
+	text-decoration : none;
+}
+
+/* *************************************************************************************/
+A  {
+	color : #006666;
+	font-size : 9pt;
+	font-weight : bold;
+	text-decoration : underline;
+}
+
+A:link  {
+	color : #006666;
+}
+
+A:visited  {
+	color : #006666;
+}
+
+/* *************************************************************************************/
+TABLE.FooterTable  {
+	background : url(ac.mainback.gif);
+	border-top : 1px #009999 solid;
+	border-bottom : 2px #009999 solid;
+	margin-top : 25pt;
+	margin-bottom : 20pt;
+	height : 25pt;
+}
+
+TABLE.tdProcDynamic  {
+	background-color : #cccccc;
+}
+
+TABLE.TitleSpacing  {
+	margin-top : -5pt;
+}
+
+TABLE.NoLines  {
+	background-color : transparent;
+}
+
+TR.NoLinesRow  {
+	vertical-align : top;
+}
+
+TD.NoLinesCell  {
+	padding-right : 6pt;
+	background-color : transparent;
+	padding-bottom : 4pt;
+}
+
+TABLE.AnswersTable  {
+	background-color : transparent;
+}
+
+TR.AnswersRow  {
+	vertical-align : top;
+}
+
+TD.AnswersCell  {
+	padding-right : 6pt;
+	background-color : transparent;
+	padding-bottom : 4pt;
+}
+
+TABLE.DynamicProcedure  {
+	margin-left : 12pt;
+	width : 97%;
+	background-color : #cccccc;
+	border : 1px solid black;
+}
+
+TD.DynamicProcCell  {
+	xfont-family : arial, helvetica, sans-serif;
+	xfont-size : 10pt;
+	padding-left : 10pt;
+}
+
+xTABLE.LeadInText  {
+	background-color : #cccccc;
+	margin-top : 2pt;
+	margin-bottom : 10pt;
+	padding : 4pt;
+	border : 1;
+}
+
+TABLE.DynaTable_2, TABLE.DynaTable_3, TABLE.DynaTable_4, TABLE.DynaTable_5  {
+	cellpadding : 6;
+	width : 100%;
+}
+
+H2.topic_inline {
+
+    background : url(ac-headbanner.gif);
+    COLOR: #ffffff;
+    DISPLAY: block;
+    font-family: Verdana, 'MS Sans Serif', sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    margin-bottom: 8pt;
+    margin-top: 24pt;
+    PADDING-BOTTOM: 2pt;
+    PADDING-LEFT: 5pt;
+    PADDING-TOP: 1pt
+}
+
+
+TD.DynaTable_2_HeadingCell, TD.DynaTable_3_HeadingCell, TD.DynaTable_4_HeadingCell, TD.DynaTable_5_HeadingCell  {
+	background-color : #009999;
+	padding : 6;
+}
+
+TD.DynaTable_2_ContentCell, TD.DynaTable_3_ContentCell, TD.DynaTable_4_ContentCell, TD.DynaTable_5_ContentCell  {
+	background-color : #CCFFFF;
+	padding : 6;
+}
+
+A.DynaTable_2_HeadingText, A.DynaTable_3_HeadingText, A.DynaTable_4_HeadingText, A.DynaTable_5_HeadingText  {
+	text-decoration : none;
+	font-color : #000000;
+}
+
+DIV.LeadInText  {
+	background-color : #cccccc;
+	xmargin-top : 2pt;
+	margin-bottom : 15pt;
+	xpadding-top : 0pt;
+	padding-left : 10pt;
+	padding-right : 10pt;
+	xpadding-bottom : -10pt;
+	border : 1px solid black;
+}
+
+TABLE.BasicLeft  {
+	border : 1px solid black;
+}
+
+TR.row_0  {
+	background : #888888;
+	vertical-align : top;
+}
+
+TR.row_1  {
+	background : #ffffff;
+	vertical-align : top;
+}
+
+TR.row_2  {
+	background : #66cccc;
+	vertical-align : top;
+}
+
+TH.BasicLeft_CELL, TD.BasicLeft_CELL  {
+	padding-left : 5pt;
+	padding-right : 7pt;
+	padding-top : 2pt;
+	padding-bottom : 2pt;
+}
+
+P.table_heading  {
+	color : white;
+	font-weight : bold;
+	font-size : 9pt;
+}
+
+P.table_title  {
+	color : white;
+	font-style : italic;
+	font-size : 8pt;
+}
+
+/* *************************************************************************************/
+.noshow  {
+	display : none;
+}
+
+.noshow_counter  {
+	display : none;
+}
+
+.show_counter  {
+	display : block;
+	margin-top : 8pt;
+	cursor : hand;
+}
+
+.counterInfo  {
+	cursor : hand;
+	text-decoration : underline;
+	color : blue;
+	font-size : 8pt;
+}
+
+.storeuserData  {
+	behavior : url(#default#userData);
+}
+
+.storeuserDataCounterDiv  {
+	behavior : url(#default#userData);
+	font-size : 8pt;
+	color : #cccccc;
+	cursor : hand;
+	margin-top : 10pt;
+}
+
+/* formatting for table around "Ask" search box*/
+.askbox  {
+	margin : 0;
+	padding : 0;
+	background : #ffffff;
+}
+
+/* Show/hide AW search box*/
+.awsearch  {
+	xdisplay : none;
+}
+
+.comment-art  {
+	xdisplay : none;
+	font-weight : bold;
+}
+
+.comment  {
+	xdisplay : none;
+	font-weight : bold;
+}
+
+.footer_padding  {
+	font-size : 4pt;
+	margin-top : 0pt;
+	margin-bottom : 0pt;
+}
+
+/* *************************************************************************************/
+P.spacer  {
+	margin-top: 0pt;
+	margin-bottom: -26pt;
+}
+
+P.CmdAccess  {
+	margin-top : 5pt;
+	margin-bottom : 5pt;
+	margin-left : 25pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+P.CmdAccessToolbar  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 65pt;
+	text-indent : -40pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+P.CmdAccessPointer  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 65pt;
+	text-indent : -40pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+P.CmdAccessShortcut  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 65pt;
+	text-indent : -40pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+P.Related  {
+	margin-top : 0pt;
+	margin-bottom : 4pt;
+	font-size : 8pt;
+	text-align : right;
+	font-weight : bold;
+	color : #990000;
+}
+
+A.nohref  {
+	text-decoration : none;
+	cursor : default;
+}
+
+DIV.SysvarBody  {
+	margin-top : 10pt;
+	margin-bottom : 10pt;
+	text-align : left;
+	margin-left : 0pt;
+}
+
+.TOC1  {
+	margin-top : 6pt;
+	margin-bottom : 2pt;
+}
+
+.TOC2  {
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.TOC3  {
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.TOC4  {
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.TOC1LINK  {
+	font-size : 8pt;
+}
+
+.TOC2LINK  {
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.TOC3LINK  {
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.TOC4LINK  {
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.IX1  {
+	font-size : 8pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.IX2  {
+	font-size : 8pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.IX3  {
+	font-size : 8pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.IX4  {
+	font-size : 8pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.IX1LINK  {
+	font-size : 8pt;
+	font-weight : normal;
+	cursor : hand;
+}
+
+.IX2LINK  {
+	font-size : 8pt;
+	font-weight : normal;
+	cursor : hand;
+}
+
+.IX3LINK  {
+	font-size : 8pt;
+	font-weight : normal;
+	cursor : hand;
+}
+
+.IX4LINK  {
+	font-size : 8pt;
+	font-weight : normal;
+	cursor : hand;
+}
+
+/* *************************************************************************************/
+.__cmd_line  {
+	margin-top : 0pt;
+	margin-bottom : 10pt;
+	margin-left : 65pt;
+	text-indent : -40pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.cmd_line  {
+	margin-top : 6pt;
+	margin-bottom : 5pt;
+	margin-left : 0pt;
+
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.__menu  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 0pt;
+	text-indent : -40pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.menu  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 0pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.shortcut_menu  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 0pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.dashboard  {
+	margin-top : 0pt;
+	margin-bottom : 10pt;
+	margin-left : 0pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.pointing_device  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 0pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.__toolbar  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 0pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.toolbar  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 0pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.__toolbar_after_body  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 65pt;
+	text-indent : -40pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+.toolbar_after_body  {
+	margin-top : 0pt;
+	margin-bottom : 5pt;
+	margin-left : 65pt;
+	text-indent : -40pt;
+	font-size : 8pt;
+	font-weight : normal;
+}
+
+._note, ._tip  {}
+
+.note, .tip  {
+	margin-top : 6pt;
+	margin-bottom : 6pt;
+}
+
+._warning  {}
+
+.warning  {}
+
+.body  {}
+
+.body_opener  {}
+
+.bullet_1_begin  {
+	margin-top : 2pt;
+	margin-bottom : 0pt;
+}
+
+.bullet_1  {
+	margin-top : 2pt;
+	margin-bottom : 0pt;
+}
+
+.bullet_1_end  {
+	margin-top : 2pt;
+	margin-bottom : 10pt;
+}
+
+.bullet_single_step  {
+	margin-top : 2pt;
+	margin-bottom : 0pt;
+}
+
+.bullet_single_step_text  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 6pt;
+}
+
+.bulleted_text  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 6pt;
+}
+}
+
+.bullet_text  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 6pt;
+}
+.bullet_text_end  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 10pt;
+}
+
+.CharCourier  {
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.CharCourierBold {
+	font-family: Courier New, Courier;
+	font-weight : bold;
+}
+
+.cr_leadin  {
+	font-size : 8pt;
+	font-weight : bold;
+	color : #990000;
+}
+
+.define_bullet  {
+	list-style : square;
+	margin-left : 15pt;
+}
+
+.define_bullet_begin  {
+	list-style : square;
+	margin-left : 15pt;
+}
+
+.define_bullet_end  {
+	list-style : square;
+	margin-left : 15pt;
+}
+
+.define_bullet_text  {
+	margin-left : 45pt;
+	margin-top : 2pt;
+	margin-bottom : 6pt;
+}
+
+.define_head  {
+	margin-left : 0pt;
+	font-size : 8pt;
+	font-weight : bold;
+	color : #333333;
+	xcolor : #3366cc;
+	margin-top : 6pt;
+	margin-bottom : 1pt;
+}
+.define_text  {
+	margin-left : 10pt;
+	margin-top : 2pt;
+	margin-bottom : 6pt;
+}
+.define_head_dev  {
+	margin-left : 10pt;
+	font-size : 8pt;
+	font-weight : bold;
+	color : #333333;
+	xcolor : #3366cc;
+	margin-left : 0pt;
+	margin-top : 4pt;
+	margin-bottom : 1pt;
+	font-style : normal;
+}
+
+.define_head_long  {
+	margin-left : 0 pt;
+	font-size : 8pt;
+	font-weight : bold;
+	color : #333333;
+	xcolor : #3366cc;
+	margin-top : 4pt;
+	margin-bottom : 1pt;
+}
+
+.define_head_long_dev  {
+	margin-left : 10pt;
+	font-size : 8pt;
+	font-weight : bold;
+	color : #333333;
+	xcolor : #3366cc;
+	margin-top : 4pt;
+	margin-bottom : 1pt;
+}
+
+.define_head_long_special  {
+	font-size : 8pt;
+	font-weight : bold;
+	color : #333333;
+	xcolor : #3366cc;
+}
+
+.define_head_special  {
+	font-size : 10pt;
+	font-weight : bold;
+	font-style : color: #990066;
+	xcolor : #333399;
+}
+
+.define_note  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 6pt;
+}
+
+.define_prompt  {
+	margin-left : 50pt;
+	text-indent : -20pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+	color : blue;
+	font-size : 9pt;
+	font-weight : normal;
+}
+
+.define_prompt_end  {
+	margin-left : 50pt;
+	text-indent : -20pt;
+	margin-top : 2pt;
+	margin-bottom : 6pt;
+	color : blue;
+	font-size : 9pt;
+	font-weight : normal;
+}
+
+
+
+.gloss_body  {
+	margin-top : 2pt;
+}
+
+.gloss_head  {
+	font-weight : bold;
+	margin-bottom : 0pt;
+}
+
+.figure_anchor, .FigureAnchor  {
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_anchor_0, .FigureAnchor_0  {
+	margin-left : 0pt;
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_anchor_1, .FigureAnchor_1  {
+	margin-left : 30pt;
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_anchor_2, .FigureAnchor_2  {
+	margin-left : 45pt;
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_anchor_3, .FigureAnchor_3  {
+	margin-left : 60pt;
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_margin, .FigureMargin  {
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_margin_0, .FigureMargin_0  {
+	margin-left : 0pt;
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_margin_1, .FigureMargin_1  {
+	margin-left : 30pt;
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_margin_2  .FigureMargin_2  {
+	margin-left : 45pt;
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_margin_3  .FigureMargin_3  {
+	margin-left : 60pt;
+	margin-top : 5pt;
+	margin-bottom : 1pt;
+}
+
+.figure_title  {
+	margin-top : 1pt;
+	margin-bottom : 5pt;
+	font-style : italic;
+}
+
+.heading_2_special  {
+	font-size : 10pt;
+	font-weight : bold;
+	color : #FFFFFF;
+}
+
+.heading_3_special  {
+	font-size : 10pt;
+	font-weight : bold;
+	color : #333399;
+}
+
+.heading_3_nobreak  {
+	font-size : 10pt;
+	font-weight : bold;
+	color : #000000;
+	margin-top : 10pt;
+	margin-bottom : -10pt;
+}
+
+.heading_4_special  {
+	font-size : 8pt;
+	font-weight : bold;
+	font-style : italic;
+	color : #990000;
+}
+
+.heading_4, .heading_mid  {
+	margin-left : 0pt;
+	font-size : 10pt;
+	font-weight : bold;
+	color : #990000;
+	margin-top : 10pt;
+	margin-bottom : 6pt;
+}
+
+.heading_mid_ref  {
+	font-size : 9pt;
+	font-weight : bold;
+	color : #990000;
+	margin-top : 10pt;
+	margin-bottom : 0pt;
+}
+
+.imagesize  {
+	margin-bottom : -5pt;
+	cursor : hand;
+}
+
+.jumplist  {
+	margin-left : -17pt;
+	font-size : 10pt;
+	margin-top : 5pt;
+	margin-bottom : 4pt;
+}
+
+.jumplist_first  {
+	margin-left : -17pt;
+	font-size : 10pt;
+	margin-top : 5pt;
+	margin-bottom : 4pt;
+}
+
+.jumplist_nonav  {
+	margin-left : -17pt;
+	font-size : 10pt;
+	margin-top : 5pt;
+	margin-bottom : 8pt;
+}
+
+.jumplist_intro  {
+	margin-top : 0pt;
+	margin-bottom : 10pt;
+}
+
+HR.jumplist_intro_overline  {
+	height : 1;
+}
+
+.bold  {
+	font-weight : bold;
+}
+
+.italic  {
+	font-style : italic;
+}
+
+.bolditalic  {
+	font-style : italic;
+	font-weight : bold;
+}
+
+._list_note, ._list_tip  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 8pt;
+}
+
+.list_note, .list_tip  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 8pt;
+}
+
+.list_note_first  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 8pt;
+}
+
+._list_warning  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 8pt;
+}
+
+.list_warning  {
+	margin-left : 30pt;
+	margin-top : 2pt;
+	margin-bottom : 8pt;
+}
+
+.list_numbered  {
+	margin-left : -4pt;
+	margin-bottom : 5pt;
+	margin-top : 5pt;
+}
+}
+
+.list_1  {
+	margin-bottom : 6pt;
+}
+
+.list_10  {
+	margin-bottom : 6pt;
+}
+
+.list_numbered_end  {
+	margin-left : -4pt;
+	margin-bottom : 10pt;
+}
+
+.list_numbered_reset  {
+	margin-top : 6pt;
+	margin-bottom : 6pt;
+	margin-left : -4pt;
+}
+
+.list_bulleted  {
+	margin-left : -18pt;
+	margin-top : 2pt;
+	margin-bottom : 0pt;
+	list-style-type : square;
+}
+
+.list_bulleted_begin  {
+	margin-left : -18pt;
+	margin-top : 2pt;
+	margin-bottom : 0pt;
+	list-style-type : square;
+}
+
+.list_bulleted_end  {
+	margin-left : -18pt;
+	margin-top : 2pt;
+	margin-bottom : 10pt;
+	list-style-type : square;
+}
+
+.ListBulletedText  {
+	margin-left : -18pt;
+	margin-top : 2pt;
+	margin-bottom : 0pt;
+}
+
+.list_bulleted_text  {
+	margin-left : 45pt;
+	margin-top : 2pt;
+	margin-bottom : 0pt;
+}
+.list_1_end        { 
+	margin-bottom: 10pt; 
+}
+
+.list_1_reset      { 
+	margin-top: 6pt; 
+	margin-bottom: 6pt; 
+}
+.list_bullet       { 
+	margin-left: 15pt; 
+	margin-top: 2pt; 
+	margin-bottom: 0pt;  
+}
+.list_bullet_begin { 
+	margin-left: 15pt; 
+	margin-top: 2pt; 
+	margin-bottom: 0pt;  
+}
+.list_bullet_end   { 
+	margin-left: 15pt; 
+	margin-top: 2pt; 
+	margin-bottom: 10pt; 
+}
+.ListBulletText    { 
+	margin-left: 45pt; 
+	margin-top: 2pt; 
+	margin-bottom: 0pt;  
+}
+.list_bullet_text  { 
+	margin-left: 45pt; 
+	margin-top: 2pt; 
+	margin-bottom: 0pt;  
+}
+
+.list_intro  {
+	font-size : 10pt;
+	margin-bottom : 5pt;
+	font-weight : bold;
+	color : #990000;
+}
+
+.list_intro_dynamic  {
+	font-size : 10pt;
+	font-weight : bold;
+	color : #555555;
+}
+
+.list_prompt  {
+	margin-left : 50pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+	text-indent : -20pt;
+	color : blue;
+	font-size : 9pt;
+}
+
+.list_prompt_end  {
+	margin-left : 50pt;
+	margin-top : 2pt;
+	margin-bottom : 6pt;
+	text-indent : -20pt;
+	color : blue;
+	font-size : 9pt;
+}
+
+.list_text  {
+	margin-left : 0pt;
+	margin-top : 3pt;
+	margin-bottom : 6pt;
+}
+
+.list_text_end  {
+	margin-left : 0pt;
+	margin-top : 3pt;
+	margin-bottom : 10pt;
+}
+
+.procedure_list  {
+	font-size : 8pt;
+	margin-top : 5pt;
+	margin-bottom : 4pt;
+}
+
+.procedure_list_first  {
+	font-size : 8pt;
+	margin-top : 15pt;
+	margin-bottom : 4pt;
+}
+
+.prog_in  {
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_in_0  {
+	margin-left : 0pt;
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_in_1  {
+	margin-left : 30pt;
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_in_2  {
+	margin-left : 60pt;
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_in_3  {
+	margin-left : 90pt;
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_in_end  {
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_in_end_0  {
+	margin-left : 0pt;
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_in_end_1  {
+	margin-left : 30pt;
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_in_end_2  {
+	margin-left : 60pt;
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_in_end_3  {
+	margin-left : 90pt;
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent  {
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent_0  {
+	margin-left : 0pt;
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent_1  {
+	margin-left : 30pt;
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent_2  {
+	margin-left : 60pt;
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent_3  {
+	margin-left : 90pt;
+	margin-top : 1pt;
+	margin-bottom : 1pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent_end  {
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent_end_0  {
+	margin-left : 0pt;
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent_end_1  {
+	margin-left : 30pt;
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent_end_2  {
+	margin-left : 60pt;
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_indent_end_3  {
+	margin-left : 90pt;
+	margin-top : 1pt;
+	margin-bottom : 8pt;
+	margin-left : 30pt;
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : normal;
+	font-weight : normal;
+}
+
+.prog_intro  {}
+
+.prog_syntax  {
+	margin-left : 30pt;
+	margin-top : 6pt;
+	margin-bottom : 6pt;
+	font-family : Courier New, Courier;
+	font-size : 12pt;
+	font-style : normal;
+	font-weight : bold;
+}
+
+.prompt  {
+	margin-top : 6pt;
+	margin-bottom : 6pt;
+	margin-left : 20pt;
+	color : #006666;
+	font-size : 9pt;
+}
+
+.prompt_0  {
+	margin-top : 0pt;
+	margin-bottom : 2pt;
+	margin-left : 30pt;
+	text-indent : -20pt;
+	color : #006666;
+	font-size : 9pt;
+}
+
+.prompt_1  {
+	margin-top : 0pt;
+	margin-bottom : 2pt;
+	margin-left : 60pt;
+	text-indent : -20pt;
+	color : #006666;
+	font-size : 9pt;
+}
+
+.prompt_2  {
+	margin-top : 0pt;
+	margin-bottom : 2pt;
+	margin-left : 90pt;
+	text-indent : -20pt;
+	color : #006666;
+	font-size : 9pt;
+}
+
+.prompt_end  {
+	margin-top : 6pt;
+	margin-bottom : 6pt;
+	margin-left : 20pt;
+
+	color : #006666;
+	font-size : 9pt;
+}
+
+.prompt_end_0  {
+	margin-top : 5pt;
+	margin-bottom : 10pt;
+	margin-left : 30pt;
+	text-indent : -20pt;
+	color : #006666;
+	font-size : 9pt;
+}
+
+.prompt_end_1  {
+	margin-top : 0pt;
+	margin-bottom : 10pt;
+	margin-left : 60pt;
+	text-indent : -20pt;
+	color : #006666;
+	font-size : 9pt;
+}
+
+.prompt_end_2  {
+	margin-top : 0pt;
+	margin-bottom : 10pt;
+	margin-left : 90pt;
+	text-indent : -20pt;
+	color : #006666;
+	font-size : 9pt;
+}
+
+.reference_head  {
+	font-size : 10pt;
+	margin-bottom : 0pt;
+	font-weight : bold;
+	font-style : normal;
+	color : #333399;
+}
+
+.table_title  {
+	text-align : left;
+	font-style : italic;
+	font-weight : normal;
+}
+
+.table_body  {
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+	font-size : 9pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.table_bullet  {
+	text-align : left;
+	margin-left : -15pt;
+}
+
+.table_heading  {
+	font-size : 10pt;
+	text-align : left;
+	font-weight : bold;
+	color : #003366;
+}
+
+.table_list  {
+	text-align : left;
+	margin-left : 30pt;
+	text-indent : -15pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.table_list_begin  {
+	text-align : left;
+	margin-left : 30pt;
+	text-indent : -15pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.table_note  {
+	font-size : 9pt;
+	margin-top : 2pt;
+	margin-bottom : 2pt;
+}
+
+.see_also_special  {
+	margin-bottom : 5pt;
+	margin-left : 3pt;
+	text-align : left;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12pt;
+	color : #FFFFFF;
+	font-weight : bold;
+	margin-top : 10px;
+	cursor : hand;
+}
+
+.sysvar_head  {
+	margin-bottom : 5pt;
+	margin-left : 3pt;
+	text-align : left;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12pt;
+	color : #FFFFFF;
+	font-weight : bold;
+	margin-top : 10px;
+	cursor : hand;
+}
+
+.see_also  {
+	font-size : 10pt;
+	font-weight : bold;
+	color : #00699b;
+	padding-top : 7px;
+	border-top : 1px #009999 solid;
+}
+
+.see_also_old  {
+	font-size : 10pt;
+	font-weight : bold;
+	color : #333399;
+}
+
+.UG_command_line  {
+	margin-top : 8pt;
+	margin-bottom : 5pt;
+}
+
+.UG_oneliner  {}
+
+.UG_related  {
+	margin-top : 8pt;
+	margin-bottom : 5pt;
+}
+
+.UG_shortcut_menu  {
+	margin-top : 8pt;
+	margin-bottom : 5pt;
+}
+
+.UG_system_variables  {
+	margin-top : 8pt;
+	margin-bottom : 5pt;
+}
+
+.UG_toolbar  {
+	font-weight : bold;
+	margin-top : 8pt;
+	margin-bottom : 5pt;
+}
+
+/* Menu/Toolbar File Styles*/
+.argument  {
+	margin-top : 4pt;
+	margin-bottom : 0pt;
+}
+
+.menuitem  {
+	color : red;
+	margin-top : 4pt;
+	margin-bottom : 4pt;
+}
+
+.helpstring  {
+	margin-left : 125pt;
+	margin-top : -16pt;
+	margin-bottom : 4pt;
+}
+
+.helpstring2  {
+	margin-left : 125pt;
+	margin-top : -27pt;
+	margin-bottom : 4pt;
+}
+
+.menuflyout  {
+	margin-top : 4pt;
+	margin-bottom : 4pt;
+}
+
+.menunav  {
+	font-size : 9pt;
+	font-weight : bold;
+	margin-top : 12pt;
+	margin-bottom : 4pt;
+}
+
+.menubody  {
+	margin-top : 8pt;
+	margin-bottom : 12pt;
+}
+
+.menulist  {
+	margin-left : 30pt;
+	margin-top : 6pt;
+	margin-bottom : 4pt;
+}
+
+.toolbaritem  {
+	margin-top : 10pt;
+	margin-bottom : 12pt;
+}
+
+.toolbarname  {
+	color : red;
+}
+
+.toolbarbutton  {
+	float : left;
+	margin-right : 10pt;
+}
+
+/* For tab labels in topic headings. The selected tab.*/
+SPAN.CurTab  {
+	font-size : 8pt;
+	width : 72pt;
+	text-align : center;
+	color : #000099;
+	font-weight : bold;
+	text-decoration : none;
+	cursor : hand;
+}
+
+/* For tab labels in topic headings. A selectable tab.*/
+SPAN.Tab  {
+	font-size : 8pt;
+	width : 70pt;
+	text-align : center;
+	cursor : hand;
+	color : #FFFFFF;
+	font-weight : bold;
+	text-decoration : none;
+}
+
+/* For tab labels in topic headings. A disabled tab.*/
+SPAN.GreyTab  {
+	font-size : 8pt;
+	width : 72pt;
+	text-align : center;
+	color : #cccccc;
+	font-weight : bold;
+	text-decoration : none;
+	cursor : default;
+}
+
+SPAN.CommentsLink  {
+	font-size : 7pt;
+	color : #009999;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+SPAN.FooterLink  {
+	font-size : 7pt;
+	color : #009999;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.gloss  {
+	color : blue;
+	cursor : hand;
+}
+
+.arrow  {}
+
+.body  {
+	font-weight : normal;
+}
+
+.bold  {
+	font-weight : bold;
+}
+
+.BoldItalic, .bold_italic  {
+	font-weight : bold;
+	font-style : italic;
+}
+
+.cmd_line  {}
+
+.courier  {
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+}
+
+.CourierBold, .courier_bold  {
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-weight : bold;
+}
+
+.CourierBoldItalic, .courier_bold_italic  {
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-weight : bold;
+	font-style : italic;
+}
+
+.CourierItalic, .courier_italic  {
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-style : italic;
+}
+
+.dingbats  {}
+
+.externally_defined  {}
+
+.italic, .emphasis  {
+	font-style : italic;
+}
+
+.sans  {
+	font-style : normal;
+	font-weight : normal;
+}
+
+.sans_bold  {
+	font-style : normal;
+	font-weight : bold;
+}
+
+.sans_bold_italic  {
+	font-style : italic;
+	font-weight : bold;
+}
+
+.sans_italic  {
+	font-style : italic;
+	font-weight : normal;
+}
+
+.serif_bold  {
+	font-style : normal;
+	font-weight : bold;
+}
+
+.serif_bold_italic  {
+	font-style : italic;
+	font-weight : bold;
+}
+
+.serif_italic  {
+	font-style : italic;
+	font-weight : normal;
+}
+
+.small_caps  {}
+
+.symbol  {}
+
+.toolbar  {}
+
+/* Other/Custom?*/
+.access  {
+	font-weight : bold;
+	color : #669999;
+	margin-left : 0pt;
+}
+
+.CodeEmphasis  {
+	font-style : italic;
+}
+
+.CodeStrong  {
+	font-weight : bold;
+}
+
+.EmphasisUnderline  {
+	font-style : italic;
+	text-decoration : underline;
+}
+
+.Strong  {
+	font-weight : bold;
+}
+
+.StrongUnderline  {
+	font-weight : bold;
+	text-decoration : underline;
+}
+
+.SubScript  {}
+
+.SuperScript  {}
+
+.Underline  {
+	text-decoration : underline;
+}
+
+.WebJump  {}
+
+X.CommentsLink  {
+	font-size : 7pt;
+	color : #003399;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+X.FooterLink  {
+	font-size : 7pt;
+	color : #003399;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.BookLink  {
+	color : #006666;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkBook  {
+	color : #006666;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkSeeAlso  {
+	font-weight : bold;
+	color : #990000;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkSpecial  {
+	color : #006666;
+	font-weight : bold;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkCommand  {
+	color : #003399;
+	font-weight : bold;
+	font-size : 8pt;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkSysvar  {
+	color : #003399;
+	font-weight : bold;
+	font-size : 8pt;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkUtility  {
+	color : #003399;
+	font-weight : bold;
+	font-size : 8pt;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkLISP  {
+	font-family : Courier New, Courier;
+	font-size : 10pt;
+	font-weight : bold;
+	color : #003399;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkVBA  {
+	font-weight : bold;
+	color : #003399;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkActiveXObject  {
+	font-weight : bold;
+	color : #003399;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkActiveXMethod  {
+	font-weight : bold;
+	color : #003399;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkActiveXProperty  {
+	font-weight : bold;
+	color : #003399;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.LinkActiveXEvent  {
+	font-weight : bold;
+	color : #003399;
+	text-decoration : underline;
+	cursor : hand;
+}
+
+.link_url, .link_html, .LinkHtml, .Url  {
+	font-style : italic;
+}
+
+.link_mailto, .MailTo  {}
+
+.link_glossary  {
+	font-weight : normal;
+	color : #333399;
+	text-decoration : none;
+	cursor : hand;
+}
+
+.NoteChar, .note_char, .list_note_char, .define_note_char, .note_list_char, .note_list_2_char  {
+	font-weight : bold;
+	color : #cc0000;
+}
+
+.TipChar, .tip_char, .list_tip_char, .define_tip_char, .tip_list_char, .tip_list_2_char  {
+	font-weight : bold;
+	color : #CC0000;
+}
+
+.WarningChar, .warning_char, .list_warning_char, .define_warning_char, .warning_list_char, .warning_list_2_char  {
+	font-weight : bold;
+	color : red;
+}
+
+.ImportantChar, .important_char, .list_important_char, .define_important_char, .important_list_char, .important_list_2_char  {
+	font-weight : bold;
+	color : #990000;
+}
+
+.UG_command_line_char, .UG_related_char, .UG_shortcut_menu_char, .UG_system_variables_char, .UG_toolbar_char, .UGAccess  {
+	font-weight : bold;
+}
+
+/* GIS styles?*/
+.boldsans  {
+	font-weight : bold;
+}
+
+.boldserif  {
+	font-weight : bold;
+}
+
+.code  {}
+
+.issue  {}
+
+.super  {}
+
+.user_input  {}
+
+.user_input_italic  {}
+
+P.codesource  {
+	font-size : 9pt;
+	font-family : Courier New;
+}
+

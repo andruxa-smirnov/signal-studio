@@ -1,0 +1,125 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Edit tab</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(94);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.12.029.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29"><FONT face=Verdana></FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"><FONT face=Verdana><STRONG>Edit 
+      Tab</STRONG> 
+      </FONT>   
+ </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<p class="body" align=center><FONT face=Verdana><IMG alt="" src="edittab.png"></FONT></p>
+<p class="body" align=center><STRONG><FONT face=Verdana>Due 
+to constant development in design and features, the appearance of certain 
+elements may differ in the program.</FONT></STRONG></p>
+<H3><A 
+name="undo leves"></A><FONT face=Verdana>Undo levels</FONT> </H3>
+<P><FONT face="Verdana" >This option lets you specify the maximum number of 
+edits that can be undone or redone. For unlimited undo, check Unlimited; 
+otherwise, uncheck it, and enter the desired number of levels in the edit box. 
+To disable undo, set the number of levels to zero. By default, undo is 
+unlimited. Each open document has its own undo history. Undo states may be 
+stored in memory or on disk, depending on the </FONT><A 
+href="ALG.12.029.htm#disk thres" ><FONT size=2 face="Verdana" >disk threshold</FONT></A><FONT face=Verdana>. Note that 
+lowering the number of undo levels while a document is open may truncate its 
+undo history. </FONT> </P>
+<H3><A 
+name="disk thres"></A><FONT face=Verdana>Disk threshold</FONT> </H3>
+<P><FONT face="Verdana" >This option determines whether the clipboard and undo 
+history are stored in memory or on disk, thereby letting you adjust the 
+corresponding tradeoff between speed and memory usage. When a chunk of audio is 
+</FONT><A href="ALG.08.025.htm"><FONT size=2 face="Verdana" >cut</FONT></A><FONT face="Verdana" > or </FONT><A 
+href="ALG.08.026.htm"><FONT size=2 face="Verdana" >copied</FONT></A><FONT face="Verdana" > to the clipboard, the 
+chunk's size is compared to the disk threshold. If it's smaller than the 
+threshold, the chunk is stored in memory, otherwise it's stored in a temporary 
+file on disk. Similarly, when an </FONT><A 
+href="ALG.08.003.htm"><FONT size=2 face="Verdana" >undo</FONT></A><FONT face="Verdana" > state is generated, i.e. 
+when a chunk of audio is backed up prior to modifying it, the chunk is either 
+stored in memory or on disk, depending on whether its size exceeds the disk 
+threshold. </FONT>
+<P><FONT face=Verdana>The disk threshold is specified in MB (megabytes), and 
+defaults to zero, which means that by default the clipboard and undo history are 
+<EM>always</EM> stored on disk, regardless of their size. For 32-bit Windows 
+users, it's recommended to leave the disk threshold zero, in order to maximize 
+the amount of memory available for documents, buffers, and other objects that 
+use memory unconditionally. A disk threshold of 
+10MB has little effect, because only clipboard/undo states up to a minute long 
+(assuming CD-quality audio) utilize memory, and such small data transfers would 
+be acceptably fast even on disk. A disk threshold of 100MB has a more noticeable 
+effect, because now clipboard/undo states up to ten minutes long utilize memory, 
+but the risk of exhausting memory also increases: ten such states could occupy a 
+gigabyte of memory. A disk threshold of 1000MB (1GB) or more effectively forces 
+the clipboard and undo history to always utilize memory. </FONT>
+<P><FONT face=Verdana>This isn't recommended unless 1) you're only editing 
+small files, or only doing a small number of edits, 2) huge amounts of physical 
+memory are available, or 3) you've limited undo to only a few levels. </FONT>
+<H3><FONT face="Verdana" >Temporary files location</FONT></H3>
+<P><FONT face="Verdana" >This option lets you specify the location of the folder&nbsp;Signal Studio 
+uses for all its temporary files. If "System default" 
+is selected, Signal Studio uses the system's temporary folder. To specify a 
+different folder, select "Custom folder" and either enter the path of the 
+desired folder in the edit box, or press Browse, navigate to the desired folder, 
+and press OK. </FONT>
+<P><FONT face="Verdana" >Signal Studio normally stores the </FONT><A 
+href="ALG.08.002.htm"><FONT size=2 face="Verdana" >clipboard</FONT></A><FONT face="Verdana" > and </FONT><A 
+href="ALG.08.003.htm"><FONT size=2 face="Verdana" >undo history</FONT></A><FONT face="Verdana" >  in 
+temporary files. These files can consume a considerable amount of disk space, 
+particularly when editing big documents, editing many documents at once, or doing 
+long sequences of edits. If the system temporary folder lacks sufficient free 
+space, e.g. because the system is installed on a small partition, you should 
+consider moving the temporary folder to different partition, or to a different 
+drive. Note that if you move the temporary folder to an external drive, that drive 
+must be accessible whenever&nbsp;Signal Studio&nbsp;is used, and its drive letter must remain 
+consistent. If the custom temporary folder is inaccessible, the error message 
+"Temporary folder not found" is shown and the system temporary folder is used 
+instead.</FONT></P>
+<P><FONT face="Verdana" ></FONT><!--  content stops HERE  --></P><!--  content stops HERE  -->
+<P><FONT face=Verdana></FONT></P>
+<H3><FONT face=Verdana></FONT></H3></FONT></FONT>
+<H3><FONT face=Verdana></FONT></H3></body></HTML>

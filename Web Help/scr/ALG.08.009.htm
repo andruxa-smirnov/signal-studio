@@ -1,0 +1,162 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Find / Find Next</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(33);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.08.009.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG>Find / Find Next 
+      Option</STRONG> 
+      </FONT>     </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2">
+</td>
+</tr>
+</table>
+</div>
+<p class="body"><FONT face="Verdana" >This command searches 
+audio for a particular sample value, or a range of sample values. To initiate a 
+search, use "<SPAN class=cmd>Edit -&gt; Find"</SPAN> or press " <SPAN 
+class=key><EM>Ctrl+F" 
+</EM>(Keyboard Shortcut)</SPAN>      . The Find dialog 
+is displayed, allowing you specify the range and other parameters, described below. 
+</FONT>   
+          
+          </p>
+<p class="body"><FONT face="Verdana" >          
+      The search begins at the current 
+</FONT><A href="ALG.00.005.htm"><FONT size=2 face="Verdana" >audio cursor</FONT></A><FONT face="Verdana" >. The search ends when a matching sample is found, or 
+(depending on the options) when the end (or start) of the audio is reached, or 
+the entire document has been searched. </FONT>   
+          
+          </p>
+<p class="body"><FONT face="Verdana" >If 
+the search is successful, the audio cursor is moved to the first matching 
+sample. </FONT>   
+          
+          </p>
+<p class="body"><FONT face="Verdana" >   
+               
+               
+             
+    
+               
+               
+             
+ To   
+               
+               
+             
+    
+               
+               
+             
+ find additional matching samples, use " <SPAN class=cmd><EM>Edit -&gt; Find</EM> <EM>Next</EM> 
+  
+"</SPAN> or press "<SPAN class=key><EM>F3</EM>" 
+(Keyboard Shortcut)</SPAN>. </FONT>   
+          
+          </p>
+<p class="body">
+<TABLE cellSpacing=0 cellPadding=2 border=1>
+  
+  <TR>
+    <TD><FONT face="Verdana" >Range</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The range of sample values to find. To 
+      find a single value, make Start and End the same.</FONT></TD></TR>
+  <TR>
+    <TD rowSpan=3><FONT face="Verdana" >Unit</FONT></TD>
+    <TD><FONT face="Verdana" >Value</FONT></TD>
+    <TD><FONT face="Verdana" >The range is interpreted as signed PCM sample 
+      values. The minimum and maximum values vary depending on the audio 
+      </FONT><A href="ALG.08.021.htm"><FONT size=2 face="Verdana" >format</FONT></A><FONT face="Verdana" >.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Percent</FONT></TD>
+    <TD><FONT face="Verdana" >The range is interpreted as signed 
+      percentages.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Decibels</FONT></TD>
+    <TD><FONT face="Verdana" >The range is interpreted in decibels. Both start 
+      and end should be less than or equal to zero in this case.</FONT></TD></TR>
+  <TR>
+    <TD rowSpan=2><FONT face="Verdana" >Match</FONT></TD>
+    <TD><FONT face="Verdana" >In range</FONT></TD>
+    <TD><FONT face="Verdana" >Find samples that lie within the specified 
+      range.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Not in range</FONT></TD>
+    <TD><FONT face="Verdana" >Find samples that lie outside the specified 
+      range.</FONT></TD></TR>
+  <TR>
+    <TD rowSpan=2><FONT face="Verdana" >Direction</FONT></TD>
+    <TD><FONT face="Verdana" >Forward</FONT></TD>
+    <TD><FONT face="Verdana" >Search forward, towards the end of the 
+      audio.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Reverse</FONT></TD>
+    <TD><FONT face="Verdana" >Search backwards, towards the start of the 
+      audio.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Wrap</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >If the end of the audio is reached (or 
+      the start if searching backwards), and this option is checked, the search 
+      wraps around and continues, otherwise it stops.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Channel</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >Use this option to limit the search to 
+      a particular channel; by default, all channels are 
+  searched.</FONT></TD></TR></TABLE>   
+          
+          </p>
+<p class="body"><FONT face="Verdana" >For example, to find 
+peaks of -3 dB or more, set Unit to "Decibels", Start to -3, End to 0, and Match 
+to "In range". Note that it's easier to change the unit <EM>before</EM> entering 
+the range. Peaks can also be located via the </FONT><A 
+href="ALG.08.023.htm"><FONT size=2 face="Verdana" >Find Clipping</FONT></A><FONT face=Verdana> command, which 
+has different parameters and presents the results as a report. </FONT>   
+          
+          </p>
+<p class="body"><FONT face=Verdana></FONT>   
+          
+          </p></body></HTML>

@@ -1,0 +1,1069 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Loose ends</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(98);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.11.001.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle">
+<a href=""><span class="BookTitleLink"><FONT face=Verdana></FONT></span></a>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT></td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"><FONT face=Verdana><STRONG>Loose Ends</STRONG> 
+      </FONT> 
+         </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<H3><A 
+name=performance></A><FONT face=Verdana>Signal Studio:</FONT></H3>
+<P><FONT face=Verdana>Signal studio&nbsp;is 
+an Open-Source Signal Editor&nbsp;and Analyzer. Signal Studio was formerly known 
+as "Signal Studio". Signal Studio includes components from several Open-Sourced 
+Projects. Notably, Signal Studio was developed from Chris Korda's work. All the 
+brand names, Product Names and Trademarks belong to their respective owners. 
+Signal Studio is licensed under the version 2 or higher&nbsp;GNU GPL 
+License.</FONT></P>
+<H3><FONT face=Verdana>Performance</FONT></H3>
+<P><FONT face=Verdana><STRONG>Signal Studio&nbsp;is unusually fast, because 
+unlike many audio editors, it stores the entire document in memory, and performs 
+all editing in memory.</STRONG> This speed comes at the cost of increased demand for memory. 
+</FONT>          
+  
+<P><FONT face="Verdana" >Many audio editors were designed around the limitations 
+of 32-bit Windows, and consequently store audio primarily on disk, swapping it 
+in and out of memory in small chunks as needed. This bottleneck increases 
+complexity and reduces performance, needlessly given current technology. </FONT>
+<P><FONT face="Verdana" >By default, the clipboard and undo history are stored 
+on disk, however you can opt to store them partially or entirely in memory in 
+order to increase performance; see </FONT><A 
+href="ALG.12.029.htm#disk thres" ><FONT size=2 face="Verdana" >disk threshold</FONT></A><FONT face="Verdana" > for details. 
+Note that this increases the risk of running out memory. </FONT>
+<P><FONT face="Verdana" >Users of 32-bit Windows should avoid running other apps 
+simultaneously with Signal Studio, and may want to try adding the /3GB startup 
+switch to their Startup Options (boot.ini). This switch squeezes the OS into 
+1GB, thereby potentially making as much as 3GB available to applications, though 
+your mileage may vary.</FONT></P>
+<H3> <FONT face=Verdana><A 
+name=perfect></A>Perfect</FONT></H3>
+<P><FONT face="Verdana" >The philosophy of <EM>perfect</EM> editing can be 
+summarized as "don't touch the bits unless you have to." More formally, a 
+bit-perfect editor passes the round-trip test, which is: open a document, and 
+without changing anything, save it as a different name, and then use a binary 
+comparison tool to verify that the copy is identical to the 
+original.&nbsp;<STRONG>Signal Studio passes the round-trip test</STRONG>, and 
+care has been taken to ensure that edits are as non-destructive as possible, meaning 
+that if a subset of an audio file is edited, the remainder is untouched. This 
+makes&nbsp;Signal Studio ideal for patching finished masters and 
+similar work. </FONT>
+<P><FONT face="Verdana" >The following editing commands either don't alter the 
+samples, or do so in a way that's entirely reversible: </FONT>
+<UL>
+  <LI><A href="ALG.08.002.htm"><FONT size=2 face="Verdana" >Clipboard</FONT></A><FONT face="Verdana" > commands </FONT>
+  <LI><A href="ALG.11.010.htm"><FONT size=2 face="Verdana" >Reverse</FONT></A><FONT face="Verdana" > </FONT>
+  <LI><A href="ALG.11.004.htm"><FONT size=2 face="Verdana" >Invert</FONT></A><FONT face="Verdana" > </FONT>
+  <LI><A href="ALG.08.021.htm"><FONT size=2 face="Verdana" >Format</FONT></A><FONT face="Verdana" > (depending on the 
+  operation)</FONT></LI></UL>
+<H3><A 
+name=mp3encoding></A><A name=mp3encoding></A><FONT face=Verdana>MP3 encoding </FONT> </H3>
+<P> <FONT face=Verdana>To save the current document as MP3, use "<SPAN 
+class=cmd><EM>File -&gt; Save As</EM>"</SPAN>, change the Save As dialog's "Save 
+as type" to MP3, and press the Save button. <STRONG>Note however that the first time 
+you do this,&nbsp;Signal Studio will likely display the Missing Library 
+dialog, containing this message: "A library is missing, and must be located on 
+your computer, or downloaded and then located." This occurs because the MP3 
+encoder (LAME) is NOT included in the&nbsp;Signal Studio&nbsp;download. 
+</STRONG></FONT>
+<P><FONT face="Verdana" >The needed library is libmp3lame.dll. If you already 
+have it, and know where it is, use the Browse button to locate it. An Open file 
+dialog is displayed. Navigate to the appropriate folder, select the DLL, and 
+press the Open button. If the DLL is acceptable, the </FONT><A 
+href="ALG.11.001.htm#mp3encoderconfig" ><FONT size=2 face="Verdana" >MP3 Encoder Configuration</FONT></A><FONT face="Verdana" > dialog appears. </FONT>
+<P><FONT face="Verdana" >If you think you have the DLL but don't know where it 
+is, use the Search button to search your hard drives for it. <STRONG>Use this 
+option only if&nbsp;you are sure that you have the file.</STRONG>&nbsp;This 
+might take a&nbsp;huge amount of time, depending on how many drives you have and 
+how full they are. If the DLL is found, you'll get a confirmation prompt; press 
+Yes to proceed. Again, if the DLL is acceptable, the MP3 Encoder Configuration 
+dialog appears. </FONT>
+<P><FONT face=Verdana>If you don't have the DLL, press the Download button, 
+which launches your web browser and directs it to <FONT color=#0066cc ><A 
+href="https://apps.akshay.in.eu.org/signal-studio/lame">Signal Studio's Website</A>  </FONT>        
+            , 
+where the DLL is available. The minimum acceptable version 
+is 3.99.5. Note that the LAME DLL shows a slightly different version number in 
+Windows (via Explorer, right-click, Properties, Version tab), with four levels instead of three, as 
+in 3.99.2.5.&nbsp; Also you want the "standard" version, not the "INI File Setup" version. 
+Download the package, unzip it, and move the DLL somewhere sensible (see 
+below). Then locate it from Signal Studio, using the Missing Library dialog's 
+Browse or Search, as described above. </FONT>
+<P><FONT face="Verdana" >The recommended location for the LAME DLL is to 
+put the DLL in the same folder as Signal Studio.exe (that's the folder 
+that you have installed Signal Studio). </FONT></P>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 align=center border=1>
+  
+  <TR>
+    <TH colSpan=3><A name=mp3encoderconfig></A><FONT face=Verdana>MP3 
+      Encoder Configuration dialog </FONT>   
+    </TH></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Algorithm</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >This option sets LAME's internal 
+      algorithm quality. Unless you're very impatient, always use High Quality. 
+      Speed kills.</FONT></TD></TR>
+  <TR>
+    <TD rowSpan=4><FONT face="Verdana" >Bit Rate Mode</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >This option selects one of three 
+      methods for limiting the bit rate and size of the output 
+file.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Constant Bit Rate</FONT></TD>
+    <TD><FONT face="Verdana" >CBR encodes every frame at the specified target 
+      bit rate. CBR is the least efficient mode, and is only recommended in 
+      streaming situations where the upper bit rate must be strictly 
+      enforced.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Average Bit Rate</FONT></TD>
+    <TD><FONT face="Verdana" >ABR maintains the specified target bit rate on 
+      average, but uses more bits for complex passages and less bits for simple 
+      ones, thereby achieving better quality than CBR for the same file 
+      size.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Variable Bit Rate</FONT></TD>
+    <TD><FONT face="Verdana" >VBR encoding varies the bit rate similarly to 
+      ABR, but targets a specified quality level, instead of a bit rate. The 
+      output file size is less predictable than with ABR, but the quality is 
+      usually better.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Bit Rate</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The target bit rate, in kbps; used in 
+      CBR and ABR modes.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Quality</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The target quality level; only used in 
+      VBR mode.</FONT></TD></TR></TABLE><!--  content stops HERE  --></P>
+<H3><A 
+name="File formats"></A><FONT face=Verdana>File formats </FONT> </H3>
+<P>
+<TABLE align=center border=1>
+  
+  <TR>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >AAC (MP4 Audio)</FONT></TD>
+    <TD><FONT face="Verdana" >AIFF (Apple/SGI)</FONT></TD>
+    <TD><FONT face="Verdana" >AU (Sun/NeXT)</FONT></TD>
+    <TD><FONT face="Verdana" >AVR (Audio Visual Research)</FONT></TD>
+    <TD><FONT face="Verdana" >CAF (Apple Core Audio File)</FONT></TD>
+    <TD><FONT face="Verdana" >FLAC (Free Lossless Audio Codec)</FONT></TD>
+    <TD><FONT face="Verdana" >HTK (HMM Tool Kit)</FONT></TD>
+    <TD><FONT face="Verdana" >IFF (Amiga IFF/SVX8/SV16)</FONT></TD>
+    <TD><FONT face="Verdana" >MAT4 (GNU Octave 2.0 / Matlab 4.2)</FONT></TD>
+    <TD><FONT face="Verdana" >MAT5 (GNU Octave 2.1 / Matlab 5.0)</FONT></TD>
+    <TD><FONT face="Verdana" >MPC (Akai MPC 2k)</FONT></TD>
+    <TD><FONT face="Verdana" >MP3 (MPEG Audio)</FONT></TD>
+    <TD><FONT face="Verdana" >OGG (OGG Container format)</FONT></TD>
+    <TD><FONT face="Verdana" >PAF (Ensoniq PARIS)</FONT></TD>
+    <TD><FONT face="Verdana" >PVF (Portable Voice Format)</FONT></TD>
+    <TD><FONT face="Verdana" >RAW (header-less)</FONT></TD>
+    <TD><FONT face="Verdana" >RF64 (RIFF 64)</FONT></TD>
+    <TD><FONT face="Verdana" >SD2 (Sound Designer II)</FONT></TD>
+    <TD><FONT face="Verdana" >SDS (Midi Sample Dump Standard)</FONT></TD>
+    <TD><FONT face="Verdana" >SF (Berkeley/IRCAM/CARL)</FONT></TD>
+    <TD><FONT face="Verdana" >VOC (Creative Labs)</FONT></TD>
+    <TD><FONT face="Verdana" >W64 (SoundFoundry WAVE 64)</FONT></TD>
+    <TD><FONT face="Verdana" >WAV (Microsoft)</FONT></TD>
+    <TD><FONT face="Verdana" >WAV (NIST Sphere)</FONT></TD>
+    <TD><FONT face="Verdana" >WAVEX (Microsoft)</FONT></TD>
+    <TD><FONT face="Verdana" >WVE (Psion Series 3)</FONT></TD>
+    <TD><FONT face="Verdana" >XI (FastTracker 2)</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Signed 8 bit PCM</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Signed 16 bit PCM</FONT></TD>
+    <TD><FONT face="Verdana" >R</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Signed 24 bit PCM</FONT></TD>
+    <TD><FONT face="Verdana" >R</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Signed 32 bit PCM</FONT></TD>
+    <TD><FONT face="Verdana" >R</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Unsigned 8 bit PCM</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >32 bit float</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >64 bit float</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >U-Law</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >A-Law</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >IMA ADPCM</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Microsoft ADPCM</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >GSM 6.10</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >32kbs G721 ADPCM</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >24kbs G723 ADPCM</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >12 bit DWVW</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >16 bit DWVW</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >24 bit DWVW</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >VOX ADPCM</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >16 bit DPCM</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >8 bit DPCM</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W (M)</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Vorbis</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD></TR></TABLE></P>
+<P>
+<TABLE align=center border=1>
+  
+  <TR>
+    <TH colSpan=4><FONT face="Verdana" >Legend</FONT></TH></TR>
+  <TR>
+    <TH colSpan=2><FONT face="Verdana" >I/O Support</FONT></TH>
+    <TH colSpan=2><FONT face="Verdana" >Surround Support</FONT></TH></TR>
+  <TR>
+    <TD><FONT face="Verdana" >R</FONT></TD>
+    <TD><FONT face="Verdana" >Read</FONT></TD>
+    <TD><FONT face="Verdana" >(M)</FONT></TD>
+    <TD><FONT face="Verdana" >Mono only</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >W</FONT></TD>
+    <TD><FONT face="Verdana" >Write</FONT></TD>
+    <TD><FONT face="Verdana" >(S)</FONT></TD>
+    <TD><FONT face="Verdana" >Stereo only</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >R/W</FONT></TD>
+    <TD><FONT face="Verdana" >Read/Write</FONT></TD>
+    <TD><FONT face="Verdana" >(M/S)</FONT></TD>
+    <TD><FONT face="Verdana" >Mono/Stereo only</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >Unsupported</FONT></TD>
+    <TD><FONT face="Verdana" >&nbsp;</FONT></TD>
+    <TD><FONT face="Verdana" >Surround OK</FONT></TD></TR></TABLE><!--  content stops HERE  --></P>
+<P><FONT face=Verdana></FONT>&nbsp;</P>
+<H3><A 
+name=shortcuts></A><FONT face=Verdana>Shortcuts</FONT></H3>
+<P><FONT face="Verdana" >The various keyboard shortcuts are as 
+follows:</FONT></P>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 align=center border=1>
+  
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+0</FONT></TD>
+    <TD><FONT face="Verdana" >Fit in Window</FONT></TD>
+    <TD><FONT face="Verdana" >Fit entire duration in window</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Shift+0</FONT></TD>
+    <TD><FONT face="Verdana" >Fit Vertically</FONT></TD>
+    <TD><FONT face="Verdana" >Reset vertical zoom and channel 
+  heights</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+=</FONT></TD>
+    <TD><FONT face="Verdana" >Zoom In</FONT></TD>
+    <TD><FONT face="Verdana" >Increase time magnification</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+-</FONT></TD>
+    <TD><FONT face="Verdana" >Zoom Out</FONT></TD>
+    <TD><FONT face="Verdana" >Decrease time magnification</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >[</FONT></TD>
+    <TD><FONT face="Verdana" >Start Selection</FONT></TD>
+    <TD><FONT face="Verdana" >Begin selection at cursor position</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+[</FONT></TD>
+    <TD><FONT face="Verdana" >Go to Selection Start</FONT></TD>
+    <TD><FONT face="Verdana" >Move cursor to start of selection</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+\</FONT></TD>
+    <TD><FONT face="Verdana" >Go to Cursor</FONT></TD>
+    <TD><FONT face="Verdana" >Scroll as needed to make cursor 
+  visible</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >]</FONT></TD>
+    <TD><FONT face="Verdana" >End Selection</FONT></TD>
+    <TD><FONT face="Verdana" >End selection at cursor position</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+]</FONT></TD>
+    <TD><FONT face="Verdana" >Go to Selection End</FONT></TD>
+    <TD><FONT face="Verdana" >Move cursor to end of selection</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+A</FONT></TD>
+    <TD><FONT face="Verdana" >Select All</FONT></TD>
+    <TD><FONT face="Verdana" >Select the entire document</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+C</FONT></TD>
+    <TD><FONT face="Verdana" >Copy</FONT></TD>
+    <TD><FONT face="Verdana" >Copy the selection and put it on the 
+      Clipboard</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+E</FONT></TD>
+    <TD><FONT face="Verdana" >Export Audio</FONT></TD>
+    <TD><FONT face="Verdana" >Save audio in other formats</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+F</FONT></TD>
+    <TD><FONT face="Verdana" >Find</FONT></TD>
+    <TD><FONT face="Verdana" >Find sample matching specified 
+  criteria</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >L</FONT></TD>
+    <TD><FONT face="Verdana" >Loop</FONT></TD>
+    <TD><FONT face="Verdana" >Toggle audio looping</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+L</FONT></TD>
+    <TD><FONT face="Verdana" >Repeat Last Plugin</FONT></TD>
+    <TD><FONT face="Verdana" >Repeat most recently used plugin</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Shift+M</FONT></TD>
+    <TD><FONT face="Verdana" >Metadata</FONT></TD>
+    <TD><FONT face="Verdana" >Edit the metadata</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+N</FONT></TD>
+    <TD><FONT face="Verdana" >New</FONT></TD>
+    <TD><FONT face="Verdana" >Create a new document</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+O</FONT></TD>
+    <TD><FONT face="Verdana" >Open</FONT></TD>
+    <TD><FONT face="Verdana" >Open an existing document</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Shift+O</FONT></TD>
+    <TD><FONT face="Verdana" >Edit Options</FONT></TD>
+    <TD><FONT face="Verdana" >Edit the options</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+R</FONT></TD>
+    <TD><FONT face="Verdana" >Record</FONT></TD>
+    <TD><FONT face="Verdana" >Start or stop recording</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >S</FONT></TD>
+    <TD><FONT face="Verdana" >Stop</FONT></TD>
+    <TD><FONT face="Verdana" >Stop the audio</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+S</FONT></TD>
+    <TD><FONT face="Verdana" >Save</FONT></TD>
+    <TD><FONT face="Verdana" >Save the active document</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+V</FONT></TD>
+    <TD><FONT face="Verdana" >Paste</FONT></TD>
+    <TD><FONT face="Verdana" >Insert Clipboard contents</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Alt+Backspace</FONT></TD>
+    <TD><FONT face="Verdana" >Undo</FONT></TD>
+    <TD><FONT face="Verdana" >Undo the last action</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Delete</FONT></TD>
+    <TD><FONT face="Verdana" >Delete</FONT></TD>
+    <TD><FONT face="Verdana" >Delete the selection</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Shift+Delete</FONT></TD>
+    <TD><FONT face="Verdana" >Cut</FONT></TD>
+    <TD><FONT face="Verdana" >Cut the selection and put it on the 
+      Clipboard</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+End</FONT></TD>
+    <TD><FONT face="Verdana" >Go to Last Frame</FONT></TD>
+    <TD><FONT face="Verdana" >Move cursor to end of document</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Esc</FONT></TD>
+    <TD><FONT face="Verdana" >Deselect</FONT></TD>
+    <TD><FONT face="Verdana" >Cancel the current selection</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >F3</FONT></TD>
+    <TD><FONT face="Verdana" >Find Next</FONT></TD>
+    <TD><FONT face="Verdana" >Find next matching sample</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >F6</FONT></TD>
+    <TD><FONT face="Verdana" >Next Pane</FONT></TD>
+    <TD><FONT face="Verdana" >Switch to the next window pane</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Shift+F6</FONT></TD>
+    <TD><FONT face="Verdana" >Previous Pane</FONT></TD>
+    <TD><FONT face="Verdana" >Switch back to the previous window 
+  pane</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+F6</FONT></TD>
+    <TD><FONT face="Verdana" >Next Document</FONT></TD>
+    <TD><FONT face="Verdana" >Activate the next MDI child window</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+Shift+F6</FONT></TD>
+    <TD><FONT face="Verdana" >Previous Document</FONT></TD>
+    <TD><FONT face="Verdana" >Activate the previous MDI child 
+  window</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+Home</FONT></TD>
+    <TD><FONT face="Verdana" >Go to First Frame</FONT></TD>
+    <TD><FONT face="Verdana" >Move cursor to beginning of 
+document</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Insert</FONT></TD>
+    <TD><FONT face="Verdana" >Insert</FONT></TD>
+    <TD><FONT face="Verdana" >Insert one or more audio files</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+Insert</FONT></TD>
+    <TD><FONT face="Verdana" >Copy</FONT></TD>
+    <TD><FONT face="Verdana" >Copy the selection and put it on the 
+      Clipboard</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Alt+Insert</FONT></TD>
+    <TD><FONT face="Verdana" >Insert Silence</FONT></TD>
+    <TD><FONT face="Verdana" >Insert silence at the current 
+  position</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Shift+Insert</FONT></TD>
+    <TD><FONT face="Verdana" >Paste</FONT></TD>
+    <TD><FONT face="Verdana" >Insert Clipboard contents</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Space</FONT></TD>
+    <TD><FONT face="Verdana" >Play/Pause</FONT></TD>
+    <TD><FONT face="Verdana" >Play or pause the audio</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >W</FONT></TD>
+    <TD><FONT face="Verdana" >Rewind</FONT></TD>
+    <TD><FONT face="Verdana" >Rewind the audio</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+X</FONT></TD>
+    <TD><FONT face="Verdana" >Cut</FONT></TD>
+    <TD><FONT face="Verdana" >Cut the selection and put it on the 
+      Clipboard</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+Y</FONT></TD>
+    <TD><FONT face="Verdana" >Redo</FONT></TD>
+    <TD><FONT face="Verdana" >Redo the previously undone action</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Z</FONT></TD>
+    <TD><FONT face="Verdana" >Find Zero Crossing</FONT></TD>
+    <TD><FONT face="Verdana" >Move cursor and selection to nearest zero 
+      crossing</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+Z</FONT></TD>
+    <TD><FONT face="Verdana" >Undo</FONT></TD>
+    <TD><FONT face="Verdana" >Undo the last action</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+Tab</FONT></TD>
+    <TD><FONT face="Verdana" >Next Document</FONT></TD>
+    <TD><FONT face="Verdana" >Activate the next MDI child window</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Ctrl+Shift+Tab</FONT></TD>
+    <TD><FONT face="Verdana" >Previous Document</FONT></TD>
+    <TD><FONT face="Verdana" >Activate the previous MDI child 
+  window</FONT></TD></TR></TABLE><!--  content stops HERE  --></P>
+<P><FONT face=Verdana></FONT>&nbsp;</P>
+<P><FONT face=Verdana></FONT>&nbsp;</P></FONT></FONT></FONT>
+<H3><FONT face=Verdana></FONT></H3></FONT>
+<H3><FONT face=Verdana></FONT></H3></FONT></FONT>
+<H3><FONT face=Verdana></FONT></H3></FONT></FONT></FONT>
+<H3><FONT face=Verdana></FONT></H3></FONT>
+<H3><FONT face=Verdana></FONT></H3></FONT></FONT>
+<H3><FONT face=Verdana></FONT></H3></body></HTML>

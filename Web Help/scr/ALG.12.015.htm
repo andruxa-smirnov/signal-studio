@@ -1,0 +1,142 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Audio tab</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(95);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.12.015.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"><FONT face=Verdana><STRONG>Audio 
+      Tab</STRONG> 
+      </FONT>  </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<p class="body" align=center><FONT face=Verdana><IMG alt="" src="audiotab.png"></FONT></p>
+<p class="body" align=center><STRONG><FONT face=Verdana>Due 
+to constant development in design and features, the appearance of certain 
+elements may differ in the program.</FONT></STRONG></p>
+<H3><FONT face="Verdana" >Playback device</FONT></H3>
+<P><FONT face="Verdana" >This option lets you select a DirectSound device driver 
+for audio </FONT><A href="ALG.08.016.htm"><FONT size=2 face="Verdana" >playback</FONT></A><FONT face=Verdana>. 
+The default is Primary Sound Driver, which is usually optimal. Note that if you 
+connect a USB audio device while the options dialog is displayed, it won't 
+appear in the driver list until you close and reopen the options dialog. <!--  content stops HERE  --></FONT></P>
+<H3><FONT face="Verdana" >Playback buffer size</FONT></H3>
+<P><FONT face="Verdana" >This option lets you adjust the size of the DirectSound 
+</FONT><A href="ALG.08.016.htm"><FONT size=2 face="Verdana" >playback</FONT></A><FONT face="Verdana" > buffer, in 
+milliseconds. If the playback buffer is too small, playback may skip, stutter, 
+or be distorted, due to buffer underrun. Increasing the buffer size makes 
+underrun less likely, at the cost of increased latency, e.g. when starting or 
+stopping playback or setting the audio position.</FONT></P>
+<H3><A 
+name="record device"></A><FONT face=Verdana>Record device</FONT> </H3>
+<P><FONT face="Verdana" >This option lets you select a DirectSound device driver 
+for audio </FONT><A href="ALG.08.004.htm"><FONT size=2 face="Verdana" >recording</FONT></A><FONT face="Verdana" >. 
+The default is Primary Sound Capture Driver, which is usually optimal. Note that 
+if you connect a USB audio device while the options dialog is displayed, it 
+won't appear in the driver list until you close and reopen the options 
+dialog.</FONT></P>
+<H3><A 
+name=recordbuffsize></A><FONT face=Verdana>Record buffer 
+size</FONT>  </H3>
+<P><FONT face="Verdana" >This option lets you adjust the size of the DirectSound 
+</FONT><A href="ALG.08.004.htm"><FONT size=2 face="Verdana" >recording</FONT></A><FONT face="Verdana" > buffer, in 
+milliseconds. If the recording buffer is too small, the recording may fail with 
+the error "Capture buffer overrun." This error usually indicates that the disk 
+is unable to keep up with the recording, particularly when recording in a high 
+resolution and/or surround audio format. In this case a larger buffer size may 
+help. Increasing the buffer size causes&nbsp;Signal Studio&nbsp;to write bigger 
+chunks less often, and because disks are optimized for large sequential 
+transfers, this may improve performance, at the cost of increased memory use. 
+</FONT>
+<P><FONT face="Verdana" >The data rate needed for a given audio format is 
+calculated as follows: Channels × (SampleSize / 8) × SampleRate. For CD-quality 
+audio, the data rate is 2 × (16 / 8) × 44,100 = 176,400 bytes per second. Any 
+current drive should be able to handle this data rate easily, unless there's 
+excessive competition for the drive from other applications. Note however that 
+more advanced audio formats can be significantly more demanding, e.g. 8 channels 
+of 24-bit at 48KHz requires over 1MB/s.</FONT></P>
+<H3><FONT face="Verdana" >MP3 import</FONT></H3>
+<P><FONT face=Verdana>This option sets the sample size for imported MP3 
+audio. The MPEG decoder has exceptional resolution and can output either 16-bit 
+or 24-bit PCM. For the best quality, select 24-bit. Note that the decoder 
+supports MPEG audio layers I, II, and III (AKA MP3). </FONT> </P>
+<H3><FONT face="Verdana" >AAC/MP4 import</FONT></H3>
+<P><FONT face=Verdana>These options set the sample size and downmix options 
+for imported AAC/MP4 audio. The AAC decoder can output 16-bit, 24-bit or 32-bit 
+PCM. For better quality, select a bigger sample size. The "Downmix to stereo" 
+option determines how surround files are handled: if it's checked, files with 
+more than two channels are downmixed to stereo, otherwise they're imported as 
+surround. </FONT> </P>
+<H3><FONT face="Verdana" >VBR encoding quality</FONT></H3>
+<P><FONT face="Verdana" >This option sets the Variable Bit Rate encoding 
+quality, which is currently only used when writing Ogg Vorbis files. Larger 
+values improve sound quality, at the cost of increased file size. The quality 
+ranges from 0 (worst/smallest) to 100 (best/biggest), and defaults to 
+40.</FONT></P>
+<H3><A 
+name=meterclipthres></A><FONT face=Verdana>Meter clip 
+threshold</FONT>  </H3>
+<P><FONT face="Verdana" >This option sets the sensitivity of clip detection in 
+level meters, which appear in the </FONT><A 
+href="ALG.08.039.htm"><FONT size=2 face="Verdana" >meter bar</FONT></A><FONT face="Verdana" > and </FONT><A 
+href="ALG.08.004.htm"><FONT size=2 face="Verdana" >Record</FONT></A><FONT face="Verdana" > dialog. If a clip is 
+detected on a given audio channel, that channel's clip indicator is set; the 
+indication consists of a red rectangle behind the abbreviated channel name, 
+which appears above the level meter. To reset a clip indicator, left-click it. 
+To reset all clip indicators at once, Alt+left-click anywhere within the meter 
+view. </FONT>
+<P><FONT face="Verdana" >The threshold is expressed in samples, and specifies 
+the minimum number of consecutive samples that must be "on the rails" to be 
+considered </FONT><A href="ALG.08.023.htm"><FONT size=2 face="Verdana" >clipping</FONT></A><FONT face="Verdana" >. 
+Note that a clip indication doesn't guarantee that peaks were truncated, it just 
+means it's likely, particularly if the threshold is large. To disable meter clip 
+detection, set the threshold to a huge number.</FONT></P>
+<P><FONT face=Verdana></FONT>&nbsp;</P><!--  content stops HERE  -->
+<P><FONT face=Verdana></FONT></P>
+<H3><FONT face=Verdana></FONT></H3>
+<H3><FONT face=Verdana></FONT></H3></body></HTML>

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Resample</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(55);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.11.009.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG>Resample 
+      Option</STRONG> 
+      </FONT>    </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<P><FONT face="Verdana" >This command does sample rate conversion by resampling 
+the audio. The conversion doesn't alter the audio's pitch, unlike the </FONT><A 
+href="ALG.08.021.htm"><FONT size=2 face="Verdana" >format</FONT></A><FONT face="Verdana" > 
+command, which changes the sample rate without resampling. The command displays 
+a dialog that lets you select the new sample rate and the conversion quality. 
+"Best" is the highest quality and is strongly recommended. <STRONG>Note that 
+resampling is lossy.</STRONG>    
+             
+             
+         </FONT></P>
+<P>
+<TABLE align=center border=1>
+  
+  <TR>
+    <TH><FONT face=Verdana>&nbsp;</FONT></TH>
+    <TH><FONT face="Verdana" >Function</FONT></TH>
+    <TH><FONT face="Verdana" >SNR</FONT></TH>
+    <TH><FONT face="Verdana" >Bandwidth</FONT></TH></TR>
+  <TR>
+    <TH><FONT face="Verdana" >Best</FONT></TH>
+    <TD><FONT face="Verdana" >sinc</FONT></TD>
+    <TD><FONT face=Verdana>97 dB </FONT> </TD>
+    <TD><FONT face="Verdana" >97%</FONT></TD></TR>
+  <TR>
+    <TH><FONT face="Verdana" >Medium</FONT></TH>
+    <TD><FONT face="Verdana" >sinc</FONT></TD>
+    <TD><FONT face=Verdana>97 dB </FONT> </TD>
+    <TD><FONT face="Verdana" >90%</FONT></TD></TR>
+  <TR>
+    <TH><FONT face="Verdana" >Fastest</FONT></TH>
+    <TD><FONT face="Verdana" >sinc</FONT></TD>
+    <TD><FONT face=Verdana>97 dB </FONT> </TD>
+    <TD><FONT face="Verdana" >80%</FONT></TD></TR></TABLE></P>
+<P><FONT face=Verdana></FONT>&nbsp;</P>
+</body>

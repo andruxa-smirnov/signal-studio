@@ -1,0 +1,195 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Record</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(97);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.12.006.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"><FONT face=Verdana><STRONG>Record Tab</STRONG> </FONT> </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<p class="body" align=center><FONT face=Verdana> <span class="CharCourier"><IMG alt="" src="recordtab.png"></span> </FONT>   
+         
+           
+          
+           </p>
+<p class="body" align=center><FONT face=Verdana><STRONG>Due 
+to constant development in design and features, the appearance of certain 
+elements may differ in the program.</STRONG> </FONT>   
+         
+           
+          
+           </p> <span class="CharCourier">
+<H3><A 
+name=activation></A><FONT face=Verdana>Activation</FONT></H3>
+<P><FONT face="Verdana" >Signal&nbsp;Studio&nbsp;provides various methods for stopping 
+and starting a </FONT><A href="ALG.08.004.htm"><FONT size=2 face="Verdana" >recording</FONT></A><FONT face="Verdana" >, 
+known as <EM>activation types</EM>: </FONT>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 border=1>
+  
+  <TR>
+    <TH><FONT face="Verdana" >Type</FONT></TH>
+    <TH><FONT face="Verdana" >Summary</FONT></TH>
+    <TH><FONT face="Verdana" >Description</FONT></TH></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Prompt</FONT></TD>
+    <TD><FONT face="Verdana" >Fully interactive</FONT></TD>
+    <TD><FONT face="Verdana" >The user is prompted for the output file name 
+      and folder, and then prompted for the audio format. Recording begins when 
+      the user presses the Start button in the Record dialog. If the user 
+      attempts to stop the recording, a confirmation prompt is displayed, and 
+      recording continues until the stop is confirmed.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >One touch</FONT></TD>
+    <TD><FONT face="Verdana" >One-touch recording (OTR)</FONT></TD>
+    <TD><FONT face="Verdana" >Recording begins immediately. The filename is 
+      generated automatically; the </FONT><A 
+      href="ALG.12.006.htm#opfolder" ><FONT face=Verdana><FONT size=2 >output folder</FONT> </FONT> 
+      </A><FONT face="Verdana" > and 
+      </FONT><A href="ALG.12.006.htm#aformat" ><FONT face=Verdana><FONT size=2 >audio format</FONT> 
+      </FONT> 
+      </A><FONT face="Verdana" > are specified via the Record Options. Stopping is 
+      similarly immediate, i.e. stop confirmation is suppressed. This activation 
+      type is optimal for use with </FONT><A href="ALG.12.006.htm#schrec" ><FONT face=Verdana><FONT size=2 >scheduled recording</FONT> </FONT> </A><FONT face="Verdana" > and </FONT><A 
+      href="../../Options/Record/03%20Hot%20keys.htm#hotkeys"><FONT size=2 face="Verdana" >hot keys</FONT></A><FONT face="Verdana" >.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Sound</FONT></TD>
+    <TD><FONT face="Verdana" >Sound-activated recording</FONT></TD>
+    <TD><FONT face="Verdana" >Input levels are monitored, and recording only 
+      begins if the start </FONT><A 
+      href="../../Options/Record/05%20Triggers.htm#triigers" ><FONT size=2 face="Verdana" >trigger</FONT></A><FONT face="Verdana" > conditions are 
+      met. Recording ends when the stop trigger conditions are met, or when the 
+      Record dialog is closed. Multiple recordings may result. Filenames are 
+      generated automatically; the output folder and audio format are specified 
+      via the Record Options. Stop confirmation is 
+  suppressed.</FONT></TD></TR></TABLE></P>
+<P><FONT face="Verdana" >Fully interactive mode is obvious and foolproof, but 
+potentially cumbersome, whereas OTR sacrifices control and safeguards for 
+immediacy.</FONT></P>
+<P align=center><B><A 
+name=schrec></A><FONT face=Verdana>Scheduled recording</FONT> </B><FONT face=Verdana> </FONT> 
+<P><FONT face=Verdana>Scheduled recording is supported via 
+the Windows Task Scheduler. To schedule a recording, create a Scheduled Task, 
+and specify the /r argument on the&nbsp;Signal Studio&nbsp;command line. This 
+argument causes&nbsp;Signal Studio&nbsp;to execute a record command immediately 
+upon being launched. Note that the activation type still matters in this case: 
+if it's "Prompt", it's automatically changed to "One touch", but if it's 
+"Sound", it's left alone, allowing you to schedule a sound-activated recording.<!--  content stops HERE  --></FONT></P>
+<H3><A 
+name=aformat></A><FONT face=Verdana>Audio format</FONT> </H3>
+<P><FONT face="Verdana" >This option lets you specify the audio format for 
+</FONT><A href="ALG.08.004.htm"><FONT size=2 face="Verdana" >recording</FONT></A><FONT face="Verdana" >. For one-touch 
+and sound-activated recording, this is the <EM>only</EM> way to specify the 
+format, but if the record </FONT><A 
+href="ALG.12.006.htm#activation" ><FONT size=2 face="Verdana" >activation</FONT></A><FONT face="Verdana" > type is "Prompt", 
+the format can also be specified via the Record dialog. The audio format 
+consists of a channel count, a sample rate in Hertz, and a sample size in bits. 
+Note that your </FONT><A 
+href="ALG.12.015.htm#record device" ><FONT size=2 face="Verdana" >record device</FONT></A><FONT face="Verdana" > may only a 
+support a limited set of audio formats.</FONT></P>
+<H3><A 
+name=hotkeys></A><FONT face=Verdana>Hot keys</FONT> </H3>
+<P><FONT face="Verdana" >This option 
+lets you assign global (system-wide) hot keys 
+(shortcut-like keys)&nbsp;to start and stop </FONT><A 
+href="ALG.08.004.htm"><FONT size=2 face="Verdana" >recording</FONT></A><FONT face="Verdana" >. Hot keys are 
+intended for use with the "One-touch" record </FONT><A 
+href="ALG.12.006.htm#activation"><FONT size=2 face="Verdana" >activation</FONT></A><FONT face="Verdana" > type. They're 
+supported for other activation types, but probably won't be as useful. Note 
+that&nbsp;Signal Studio&nbsp;must be running to detect hot keys, though it can be 
+minimized, and needn't be the foreground task. </FONT>
+<P><FONT face="Verdana" >To assign a hot key, first use the drop-list to select 
+the target function ("Start" or "Stop"). Then focus the hot key control (to the 
+right of the drop-list), by either left-clicking it, or pressing <SPAN 
+class=key><EM>Tab</EM></SPAN>. Now enter the desired key combination, and then 
+move the focus elsewhere, by left-clicking a different control, or pressing 
+<SPAN class=key><EM>Tab</EM></SPAN> again. To delete an existing hot key 
+assignment, press <SPAN class=key>Delete</SPAN> or <SPAN 
+class=key>Backspace</SPAN> in the hot key control. </FONT>
+<P><FONT face="Verdana" >Hot key definitions must include at least one modifier 
+key, i.e. <SPAN class=key><EM>Ctrl</EM></SPAN>, <SPAN 
+class=key><EM>Shift</EM></SPAN>, or <SPAN class=key><EM>Alt</EM></SPAN>. 
+Multiple modifier keys (e.g. <SPAN class=key><EM>Ctrl+Shift</EM></SPAN>) are 
+permitted and strongly encouraged. Unmodified hot keys, and hot keys modified 
+only by <SPAN class=key><EM>Alt</EM></SPAN> are disallowed, to avoid conflicting 
+with menus. Choose your hot keys carefully to avoid overriding Signal Studio's 
+</FONT><A href="ALG.11.001.htm#shortcuts"><FONT size=2 face="Verdana" >shortcuts</FONT></A><FONT face="Verdana" >, and/or the 
+shortcuts of other applications.</FONT></P>
+<H3><A 
+name=opfolder></A><FONT face=Verdana>Output folder</FONT> </H3>
+<P><FONT face="Verdana" >This option specifies the output folder for one-touch 
+and sound-activated </FONT><A 
+href="ALG.08.004.htm"><FONT size=2 face="Verdana" >recording</FONT></A><FONT face="Verdana" >. It's only applicable 
+when the record </FONT><A href="ALG.12.006.htm#activation"><FONT size=2 face="Verdana" >activation</FONT></A><FONT face="Verdana" > 
+type is "One-touch" or "Sound". In both of these cases, the filename is 
+generated automatically from the current date and time. If the activation type 
+is "Prompt", the output folder and filename are specified via the "Save 
+Recording As" dialog, so this option doesn't apply. </FONT>
+<P><FONT face="Verdana" >The folder path can be browsed for, or entered in the 
+edit control. A relative path is permitted, It's relative to the application 
+(i.e. the folder containing Signal Studio.exe).</FONT></P>
+<H3><A 
+name=triigers></A><FONT face=Verdana>Triggers</FONT></H3>
+<P><FONT face="Verdana" >This option specifies the conditions in which 
+sound-activated </FONT><A href="ALG.08.004.htm"><FONT size=2 face="Verdana" >recording</FONT></A><FONT face="Verdana" > 
+starts and stops. It's only applicable when the record </FONT><A 
+href="ALG.12.006.htm#activation"><FONT size=2 face="Verdana" >activation</FONT></A><FONT face="Verdana" > type is "Sound". 
+Start and stop each have their own condition, consisting of an input level 
+threshold in decibels, and a minimum duration in seconds. Recording begins if 
+the input level (on any channel) reaches or exceeds the start threshold, for at 
+least the start duration. Once started, recording continues until the input 
+level (on all channels) falls below the stop threshold, for at least the stop 
+duration. </FONT>
+<P><FONT face="Verdana" >The start condition defines "activity" or "signal", 
+while the stop condition defines "inactivity" or "quiet". The stop duration is 
+especially important because it determines how inconsistent input is handled. If 
+the input contains quiet pauses, and the pauses are longer than the stop 
+duration, the recording may be split into multiple files. To avoid this, 
+increase the stop duration.</FONT></P>
+<P><FONT face="Verdana" ></FONT>&nbsp;</P><!--  content stops HERE  --></span></body></HTML>

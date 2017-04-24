@@ -1,0 +1,115 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Plugins</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(78);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.08.034.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG>Plugin Menu</STRONG> 
+      </FONT>  </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2">
+</td>
+</tr>
+</table>
+</div>
+<P><FONT face=Verdana>Plugins add special functions to 
+Signal Studio, such as Karaoke, Flanger, Pitch Scaler, Filter&nbsp;etc. </FONT>         
+    
+<P><FONT face=Verdana>Signal Studio&nbsp;supports 
+equalization, limiting, compression, and other audio effects, via </FONT>       
+   <A href="http://www.ladspa.org/"><FONT size=2 face=Verdana>LADSPA</FONT></A><FONT face=Verdana> plugins. The plugins 
+included in the&nbsp;Signal Studio&nbsp;download are Windows ports of </FONT>       
+     <A 
+href="http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html"><FONT size=2 face=Verdana>Steve Harris' LADSPA plugins</FONT></A><FONT face=Verdana>, and include filters (DJ 
+EQ, triple parametric EQ, high pass, low pass, band pass), a limiter, and mono 
+and stereo compressors. The entire set of 92 plugins is available within the 
+Signal Studio itself, starting from <STRONG>version 1.1</STRONG></FONT><FONT face=Verdana>; see </FONT>      
+              
+             
+        
+  <A 
+href="ALG.08.031.htm"><FONT size=2 face=Verdana>Getting more plugins</FONT></A><FONT face=Verdana>. </FONT> 
+<P><FONT face=Verdana>To use a plugin, select it from the <SPAN class=cmd>Plugin</SPAN> menu. 
+<STRONG>You may want to </STRONG></FONT><A 
+href="selectingaudio.htm"><FONT size=2 face=Verdana>select</FONT></A><FONT face=Verdana><STRONG> a portion of the audio first, otherwise the 
+plugin will be applied to the audio's entire duration.</STRONG> For multi-channel audio, you 
+may also want to select which channel(s) the plugin should operate on. </FONT>  
+            
+   <A href="channelselection.htm"><FONT size=2 face=Verdana>Channel 
+selection</FONT></A><FONT face=Verdana> is 
+straightforward for mono plugins, but more complicated for other types of 
+plugins; see </FONT>     
+          <A 
+href="ALG.08.030.htm"><FONT size=2 face=Verdana>Plugins and channels</FONT></A><FONT face=Verdana>. </FONT> 
+<P><FONT face=Verdana>Selecting a plugin causes&nbsp;Signal Studio&nbsp;to display the Plugin 
+Parameters dialog, which lets you change the plugin's parameters. To change a 
+parameter, either adjust its slider control, or type a new value in its edit 
+control and press <SPAN class=key>Tab</SPAN> or <SPAN 
+class=key>Shift+Tab</SPAN>. The range shown for each parameter is 
+only a hint; values outside the suggested range can be specified via the edit 
+control. Plugin parameter changes are remembered during any given run of Signal 
+Studio. To reset the plugin's parameters to their default state, press the 
+Parameters dialog's Reset button. Once the plugin's parameters are set as 
+desired, press OK to close the dialog and apply the plugin to the selected 
+audio. </FONT>           
+             
+             
+           
+              
+          
+<P><FONT face=Verdana>To preview a plugin, do as follows: 
+Select a small portion of audio, and </FONT>              <A 
+href="ALG.08.016.htm"><FONT size=2 face=Verdana>play</FONT></A><FONT face=Verdana> it with </FONT>   <A href="ALG.08.013.htm"><FONT size=2 face=Verdana>looping</FONT></A><FONT face=Verdana> 
+enabled, so that it repeats. Now select the plugin from the Plugin menu, adjust 
+its parameters as desired, and press OK to apply the plugin. If the result is 
+unsatisfactory, </FONT>        
+              
+         <A 
+href="ALG.08.003.htm"><FONT size=2 face=Verdana>undo</FONT></A><FONT face=Verdana> (<SPAN class=key><EM>Ctrl+Z</EM></SPAN>), and press " <SPAN 
+class=key><EM>Ctrl+L"</EM></SPAN> to repeat the last plugin. Now 
+readjust the parameters and press " <EM>OK </EM>" again. Repeat this process of undoing, repeating, readjusting, and 
+reapplying until the desired result is obtained. The smaller the audio 
+selection, the more efficient this process will be. <!--  content stops HERE  --></FONT></P>
+<p class="footer_padding"><FONT face=Verdana></FONT>&nbsp;</p></body></HTML>

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Generate</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(50);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.08.024.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG>Generate 
+      Option</STRONG> 
+      </FONT>  </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<P><FONT face="Verdana" >The audio generator lets you synthesize a waveform 
+according to parameters, explained below. All parameters can be fractional 
+unless specified otherwise. Each generation creates a new document. Note that if 
+you want to keep a generated document, you must save it via <SPAN 
+class=cmd>File/Save</SPAN>. </FONT>
+<P> <FONT face=Verdana><FONT color=#ff0000><B><U>WARNING:</U></B> GENERATED AUDIO MAY 
+HAVE <STRONG>EXTREME FREQUENCIES</STRONG> <STRONG>AND LEVELS</STRONG>, SO 
+<STRONG>TURN THE VOLUME DOWN BEFORE PLAYING</STRONG> , TO 
+AVOID SPEAKER AND/OR <STRONG>HEARING</STRONG>   
+    <STRONG>DAMAGE</STRONG>      
+ .</FONT> </FONT> 
+<P><FONT face="Verdana" >The same waveform is output to all channels. To make an 
+audio file with a different waveform in each channel, generate a series of mono 
+files and then combine them using </FONT><A 
+href="ALG.11.002.htm"><FONT size=2 face="Verdana" >Insert Channel</FONT></A><FONT face="Verdana" >.</FONT></P>
+<P><FONT face=Verdana></FONT> </P>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 border=1>
+  
+  <TR>
+    <TH colSpan=3><FONT face="Verdana" >General</FONT></TH></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Channels</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The number of audio channels; must be 
+      an integer.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Sample Rate</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The audio's sample rate, in Hertz; 
+      must be an integer.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Sample Size</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The audio's sample size, in bits; must 
+      be an integer.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Duration</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The duration of the audio, in 
+      seconds.</FONT></TD></TR>
+  <TR>
+    <TH colSpan=3><FONT face="Verdana" >Amplifier</FONT></TH></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Volume</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The waveform's volume, as a 
+      percentage. Values exceeding 100% may cause clipping.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Attack</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The waveform's attack, as a percentage 
+      of its duration. At zero, the attack is instantaneous; at 100% it spans 
+      the entire waveform. The sum of attack and decay shouldn't exceed 
+      100.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Decay</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The waveform's decay, as a percentage 
+      of its duration. At zero, the decay is instantaneous; at 100% it spans the 
+      entire waveform. The sum of attack and decay shouldn't exceed 
+    100.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Logarithmic fade</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >If checked, the attack and decay are 
+      logarithmic, otherwise they're linear.</FONT></TD></TR>
+  <TR>
+    <TH colSpan=3><FONT face="Verdana" >Oscillator (Carrier and 
+      Modulator)</FONT></TH></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Waveform</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The oscillator waveform: options are 
+      Triangle, Sine, Ramp Up, Ramp Down, Square, Pulse, Random, and Random 
+      Ramp.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Frequency</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The oscillator frequency in Hertz. 
+      This shouldn't exceed half the sample rate.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Pulse Width</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >For pulse waveforms only, the pulse 
+      width or duty cycle, as a percentage. 0% is all negative, 100% is all 
+      positive, and 50% yields a square wave.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Phase</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The initial phase of the waveform, in 
+      degrees.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >DC Bias</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The DC offset or bias, as a signed 
+      percentage. At 100%, the origin is the positive rail; at -100%, it's the 
+      negative rail.</FONT></TD></TR>
+  <TR>
+    <TH colSpan=3><FONT face="Verdana" >Modulation</FONT></TH></TR>
+  <TR>
+    <TD rowSpan=5><FONT face="Verdana" >Modulation Type</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >This parameter determines how the 
+      modulator affects the carrier.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >None</FONT></TD>
+    <TD><FONT face="Verdana" >The modulator has no effect.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Frequency</FONT></TD>
+    <TD><FONT face="Verdana" >The modulator changes the carrier's frequency. 
+      At 100% depth, the range is +/- an octave; at 50% it's +/- a 
+      tritone.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Amplitude</FONT></TD>
+    <TD><FONT face="Verdana" >The modulator changes the carrier's amplitude. 
+      At 100% depth, the range is from silence to full volume.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Pulse Width</FONT></TD>
+    <TD><FONT face="Verdana" >The modulator changes the carrier's pulse width; 
+      this only works if the carrier's waveform is Pulse.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Depth</FONT></TD>
+    <TD colSpan=2><FONT face="Verdana" >The amount of modulation, as a 
+      percentage. Behavior depends on the type of modulation, see 
+    above.</FONT></TD></TR></TABLE></P>
+<P><FONT face=Verdana>To generate a frequency sweep, first select the desired 
+audio format via the General parameters, and then press the Sweep button to 
+launch the Sweep dialog, which lets you specify the sweep's starting and ending 
+frequencies, duration in seconds, and waveform. Press OK to generate the sweep. 
+Note that sweep generation overwrites the following parameters: Carrier 
+Frequency, Modulator Frequency, Modulator Waveform, Modulation Type, and 
+Modulation Depth. 
+</FONT> </P>
+<P><FONT face=Verdana><!--  content stops HERE  --></FONT></P>
+</body>

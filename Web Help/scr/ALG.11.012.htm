@@ -1,0 +1,136 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Spectrum</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(59);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.11.012.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG>Spectrum 
+      Option</STRONG> 
+      </FONT>   </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2">
+</td>
+</tr>
+</table>
+</div>
+<P><FONT face="Verdana" >This command analyzes the frequency spectrum of audio, 
+via a Fast Fourier Transform (FFT). The result is displayed as a plot in which 
+the horizontal axis is frequency in Hertz, and the vertical axis is amplitude in 
+decibels. The FFT output can also be exported to a tab-delimited text file, 
+using the Export button. For real-time analysis, use the </FONT><A 
+href="ALG.08.043.htm"><FONT size=2 face="Verdana" >spectrum bar</FONT></A><FONT face="Verdana" > instead. </FONT>
+<P><FONT face="Verdana" >If a </FONT><A 
+href="selectingaudio.htm"><FONT size=2 face="Verdana" >selection</FONT></A><FONT face="Verdana" > exists, only the 
+selection is analyzed, otherwise the entire document is analyzed. The analysis 
+has various parameters, described below. After changing one or more parameters, 
+press the Refresh button (<SPAN class=key><EM>Alt-R</EM> Keyboard 
+Shortcut</SPAN>) to re-compute the FFT and update the plot. It's not necessary 
+to refresh after changing Frequency Axis or View, because they don't require 
+re-computing the FFT.</FONT></P>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 align=center border=1>
+  
+  <TR>
+    <TD><FONT face="Verdana" >Window Function </FONT> </TD>
+    <TD><FONT face="Verdana" >This selects which window 
+      function to apply to the audio prior to the FFT, to reduce spectral 
+      leakage. All are bell-shaped or triangular, except for the rectangular 
+      window. </FONT>             
+                 
+         </TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Window Size </FONT> </TD>
+    <TD><FONT face="Verdana" >This is the size of the 
+      FFT, in sample frames. Larger values give increased spectral resolution 
+      (more frequency </FONT>             
+           <A 
+      href="ALG.12.027.htm#windowsize"><FONT size=2 face="Verdana" >bands</FONT></A><FONT face=Verdana>), which is 
+      helpful when analyzing low frequencies. </FONT>       
+      </TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Frequency Axis </FONT> </TD>
+    <TD><FONT face=Verdana>This determines whether the 
+      plot's frequency axis is has a linear or logarithmic scale. A logarithmic 
+      scale allocates more space (visually) to low frequencies. </FONT>            
+                
+       </TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Channel Mode </FONT> </TD>
+    <TD><FONT face=Verdana>This determines how 
+      multi-channel audio is handled. Select "Combine" to sum all channels prior 
+      to analysis, or "Separate" to analyze each channel 
+  individually. </FONT>         
+                  
+       </TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >View</FONT></TD>
+    <TD><FONT face=Verdana>If channel are analyzed 
+      separately (see above), this option lets you select a single channel to 
+      show in the plot, or select "ALL" to view all channels at 
+  once. </FONT>           
+                     
+        </TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Frequency Range </FONT> </TD>
+    <TD><FONT face=Verdana>To limit the plot to a 
+      particular frequency range, uncheck "Auto" and enter the start and end 
+      frequencies in Hertz. To restore the default range, recheck "Auto". Note 
+      that the frequency range controls may be hidden if the dialog is too 
+      narrow. In this case, widen the dialog until they're 
+  visible. </FONT>            
+                  
+                 
+                    
+       </TD></TR></TABLE></P>
+<P><FONT face=Verdana>The plot has a tooltip, which displays the frequency 
+and amplitude of the nearest data point. The tooltip appears when the mouse 
+cursor is positioned on or near a data point (or the line between two data 
+points), and held there for half a second. Once the tooltip is shown, if the 
+cursor is moved along the plotted line, the tooltip tracks the cursor and 
+updates itself immediately. To hide the tooltip, left-click; it stays hidden 
+until it's reset by moving the cursor outside the plot window, and then 
+back. </FONT> </P>
+<P><FONT face=Verdana><!--  content stops HERE  --></FONT></P>
+<DIV><FONT face=Verdana></FONT></DIV></body></HTML>

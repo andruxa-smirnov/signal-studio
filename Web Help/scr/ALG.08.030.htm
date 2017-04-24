@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Plugins and Channels</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(79);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.08.030.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG> Plugins and 
+      Channels</STRONG>&nbsp; </FONT> 
+     </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2">
+</td>
+</tr>
+</table>
+</div>
+<P><A href="ALG.08.034.htm"><FONT size=2 face="Verdana" >Plugins</FONT></A><FONT face="Verdana" > can be divided into two 
+types, based on the number of audio inputs and outputs they have: plugins with 
+exactly one input and one output (mono), and plugins with any other Input/Output 
+(I/O)&nbsp;configuration (non-mono). Signal Studio handles these two types of 
+plugins differently with respect to </FONT><A 
+href="channelselection.htm"><FONT size=2 face="Verdana" >channel selection</FONT></A><FONT face="Verdana" >. </FONT>
+<P><FONT face="Verdana" >For mono plugins, the plugin is simply applied to the 
+selected channels, one at a time. Since all channels are selected by default, 
+explicit channel selection is only necessary if you want to process channels 
+differently. For example to EQ a stereo file's channels differently, two 
+operations are required: first select the left channel only and apply the EQ, 
+and then select the right channel only, and apply the EQ again, specifying 
+different parameters. </FONT>
+<P><FONT face="Verdana" >For non-mono plugins, the number of selected channels 
+must match the maximum of the plugin's input and output counts. In other words, 
+whichever is bigger, the number of inputs or the number of outputs, is how many 
+channels must be selected for a non-mono plugin. </FONT>
+<P><FONT face="Verdana" >For example, the stereo compressor plugin SC4 has two 
+inputs and two outputs. This means stereo audio works "naturally" with SC4, in 
+the sense that channel selection isn't necessary. Mono audio won't work however: 
+the mono compressor (SC4 mono) must be used instead. SC4 can also handle 
+surround audio, but in this case, channel selection <EM>is</EM> necessary: you 
+must select two channels, otherwise you'll get the error message "Plugin SC4 
+requires 2 selected channels." Given a 5.1 surround file, you could select the 
+Front Left and Front Right for example, or any other pair of channels. The 
+selected channels needn't be adjacent. </FONT>
+<P><FONT face="Verdana" >Some plugins have asymmetric I/O configurations, i.e. 
+more inputs than outputs or vice versa, and in such cases the following rules 
+apply: </FONT></P>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 border=1>
+  
+  <TR>
+    <TD><FONT face="Verdana" >More inputs than outputs</FONT></TD>
+    <TD><FONT face="Verdana" >The plugin reads and writes the first N selected 
+      channels, where N is the <EM>output</EM> count; the remaining selected 
+      channels are only read, and remain unmodified.</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >More outputs than inputs</FONT></TD>
+    <TD><FONT face="Verdana" >The plugin reads and writes the first N selected 
+      channels, where N is the <EM>input</EM> count; the remaining selected 
+      channels are only written, and their current contents are 
+    ignored.</FONT></TD></TR></TABLE></P>
+<P><FONT face="Verdana" >The following examples further illustrate asymmetric 
+I/O behavior: </FONT>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 border=1>
+  
+  <TR>
+    <TH><FONT face="Verdana" >Plugin</FONT></TH>
+    <TH><FONT face="Verdana" >Inputs</FONT></TH>
+    <TH><FONT face="Verdana" >Outputs</FONT></TH>
+    <TH><FONT face="Verdana" >Behavior</FONT></TH></TR>
+  <TR>
+    <TD><FONT face="Verdana" >SC2</FONT></TD>
+    <TD><FONT face="Verdana" >2</FONT></TD>
+    <TD><FONT face="Verdana" >1</FONT></TD>
+    <TD><FONT face="Verdana" >Two channels must be selected. Both channels are 
+      used as input. The output overwrites the first channel, while the second 
+      channel remains unmodified. You may want to </FONT><A 
+      href="ALG.08.020.htm"><FONT size=2 face="Verdana" >delete</FONT></A><FONT face="Verdana" > the second 
+      channel afterwards, by right-clicking it and selecting "Delete 
+      Channel".</FONT></TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >GVerb</FONT></TD>
+    <TD><FONT face="Verdana" >1</FONT></TD>
+    <TD><FONT face="Verdana" >2</FONT></TD>
+    <TD><FONT face="Verdana" >Two channels must be selected. Of the two 
+      selected channels, only the first one is used as input; the plugin ignores 
+      the contents of the second channel, which can be empty. If your file is 
+      mono, simply add an extra empty channel to the file, by using the 
+      </FONT><A href="ALG.08.021.htm"><FONT size=2 face="Verdana" >Format</FONT></A><FONT face="Verdana" > command to 
+      change the channel count from 1 to 2. Both channels are overwritten by the 
+      output.</FONT></TD></TR></TABLE></P>
+</body>

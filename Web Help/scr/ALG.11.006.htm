@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RMS Statistics</title>
+<link type="text/css" href="ac.acad_ak.css" rel="StyleSheet">
+<link media="print" type="text/css" href="ac.acad_ak_print.css" rel="StyleSheet">
+<script src="ac_common.js" language="javascript"></script><script src="ac.strings.js" language="javascript"></script><script src="ac.acad_ak.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffffff"><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(57);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=ALG.11.006.htm";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+<div class="HeadingDiv">
+<table class="HeadingTable" border="0" cellspacing="0" cellpadding="0" width="103%">
+<tr valign="top">
+<td class="BookTitleCell" height="29">
+<div class="BookTitle"><FONT face=Verdana></FONT>
+</div><FONT face=Verdana>&nbsp; </FONT>	
+									
+								</td><td align="right"><FONT face=Verdana></FONT>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="TopHead"> <FONT face=Verdana><STRONG>RMS Statistics 
+      Option</STRONG> 
+      </FONT>  </div>
+</td>
+</tr>
+<tr valign="bottom">
+<td height="33" colspan="2"><FONT face=Verdana></FONT>
+</td>
+</tr>
+</table>
+</div>
+<P><FONT face="Verdana" >This command displays RMS statistics for the </FONT><A 
+href="selectingaudio.htm"><FONT size=2 face="Verdana" >selected audio</FONT></A><FONT face="Verdana" >, or if no 
+selection exists, for the entire document. The statistics include the minimum, 
+maximum, average, and total RMS level. Separate statistics are kept for each 
+channel. The dialog has two pages, selectable via tabs; one of them lists the 
+RMS statistics, while the other plots an RMS histogram. For the histogram, the 
+Channel drop list in the upper-right corner selects which channel is on top. 
+Several options are provided, as follows:</FONT></P>
+<P>
+<TABLE cellSpacing=0 cellPadding=2 border=1 align=center>
+  
+  <TR>
+    <TD><FONT face=Verdana>Account for DC </FONT>  </TD>
+    <TD><FONT face=Verdana>Check this option to 
+      correct for DC offset before computing the RMS statistics. </FONT>            
+      </TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>0 dB level </FONT>  </TD>
+    <TD><FONT face=Verdana>This option calibrates 0 db 
+      to either a full-scale sine wave, or a full-scale square wave. Selecting 
+      FS Sine increases all RMS statistics by 3.02 dB. </FONT>             
+                 
+       </TD></TR>
+  <TR>
+    <TD><FONT face=Verdana>Window size </FONT> </TD>
+    <TD><FONT face=Verdana>This specifies the size of 
+      the sliding window, in milliseconds. The sliding window affects the 
+      minimum, maximum, and average statistics, and the histogram, but has no 
+      effect on total RMS. Larger sizes generally give smoother 
+    results. </FONT>           
+                
+                   
+       </TD></TR>
+  <TR>
+    <TD><FONT face="Verdana" >Refresh</FONT></TD>
+    <TD><FONT face=Verdana>Press this button to 
+      recalculate the statistics after changing one or more of the above 
+      options. 
+</FONT>           
+          </TD></TR></TABLE></P>
+<P><FONT face=Verdana></FONT>&nbsp;</P></BODY></HTML>
